@@ -39,3 +39,103 @@ $add-btn: #D9D9D9;
 // $add: #3E5440;
 // $free: #026F0D;
 // $line-border: rgba(0, 0, 0, 0.67);
+%flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// 'Kosugi', 'Kaushan Script'
+
+.body{
+    font-family: 'Quicksand';
+}
+.wrapper {
+    max-width: 100%;
+
+}
+
+.header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: $bg-night;
+    padding: 43px 0;
+    color: $main-txt;
+    font-family: 'Quicksand';
+    &__container{
+        max-width: 1726px;
+        margin: 0 auto;
+        @extend %flexcenter;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 1.25;
+    }
+
+    &__nav {
+        ul{
+        @extend %flexcenter;
+        gap: 35px;
+        font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            
+        }
+    }
+
+    &__navItem {
+        padding: 0 23px;
+        a{
+            color: inherit;
+        }
+    }
+}
+
+.icon-pizza {
+    margin-right: 6px;
+}
+
+.home {
+
+    // .home__container
+
+    &__container {}
+
+    // .home__content
+
+    &__content {}
+
+    // .home__title
+
+    &__title {}
+
+    // .home__text
+
+    &__text {}
+
+    // .home__search
+
+    &__search {}
+
+    // .home__searchBtn
+
+    &__searchBtn {}
+
+    // .home__img
+
+    &__img {}
+
+    // .home__toggle
+
+    &__toggle {}
+}
+
+.icon-magnifier {}
+
+.icon-day {}
+
+.icon-night {}

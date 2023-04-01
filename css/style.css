@@ -1,0 +1,57 @@
+.header__nav ul, .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body {
+  font-family: "Quicksand";
+}
+
+.wrapper {
+  max-width: 100%;
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background: #151515;
+  padding: 43px 0;
+  color: #FF8C42;
+  font-family: "Quicksand";
+}
+.header__container {
+  max-width: 1726px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__logo {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 1.25;
+}
+.header__nav ul {
+  gap: 35px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+}
+.header__navItem {
+  padding: 0 23px;
+}
+.header__navItem a {
+  color: inherit;
+}
+
+.icon-pizza {
+  margin-right: 6px;
+}
