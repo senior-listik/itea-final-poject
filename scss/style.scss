@@ -196,3 +196,109 @@ $main-txt-day: #FF5B00;
 .icon-day {font-size: 71px;}
 
 .icon-night {font-size: 71px;}
+
+.menu {
+    position: relative;
+    background: $bg-night;
+    padding: 16px 95px 70px 0;
+    
+
+    &__container{
+        max-width: 1825px;
+        display: flex;
+        gap: 4px;
+        // justify-content: end;
+    }
+    &__img {
+        padding-top: 160px;
+    }
+
+    &__content {
+        max-width: 1370px;
+        font-family: 'Kosugi';
+        font-weight: 400;
+        color: $secondary-txt;
+        text-transform: capitalize;
+        line-height: 1;
+       &>div{
+        display: flex;
+        gap: 100px;
+        width: 100%;
+       }
+    }
+
+    &__title {
+        width: 100%;
+        text-align: center;
+        font-family: 'Kaushan Script';
+        font-weight: 400;
+        font-size: 9.5rem;
+        line-height: 1.45;
+        color: $main-txt;
+    }
+
+    &__block--left {
+        // display: flex;
+        // flex-direction: column;
+        max-width: 681px;
+    }
+
+    &__subBlockItem {
+        margin-bottom: 85px;
+    }
+
+    &__subTitle {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        font-size: 2rem;
+    }
+
+    &__listItem {
+        margin-bottom: 33px;
+    }
+
+    &__block--right {
+        max-width: 598px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__list3 {}
+
+    &__list3Item {
+        display: flex;
+        gap: 77px;
+        h4{
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        p{
+            font-size: 1.25rem;
+            line-height: 137.5%;
+            text-transform: lowercase;
+        }
+    }
+    &__itemContainer{
+            max-width: 346px;
+    }
+    &__btn {
+        width: 247px;
+        height: 64px;
+        font-family: 'Kosugi';
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1;
+        text-transform: capitalize;
+        color: $secondary-txt;
+        background: $main-txt;
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+}
+.pizza_cost{
+    font-size: 2.5rem;
+}

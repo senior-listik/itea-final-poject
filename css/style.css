@@ -154,3 +154,105 @@
 .icon-night {
   font-size: 71px;
 }
+
+.menu {
+  position: relative;
+  background: #151515;
+  padding: 16px 95px 70px 0;
+}
+.menu__container {
+  max-width: 1825px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+}
+.menu__img {
+  padding-top: 160px;
+}
+.menu__content {
+  max-width: 1370px;
+  font-family: "Kosugi";
+  font-weight: 400;
+  color: #FFDDC8;
+  text-transform: capitalize;
+  line-height: 1;
+}
+.menu__content > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+  width: 100%;
+}
+.menu__title {
+  width: 100%;
+  text-align: center;
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  font-size: 9.5rem;
+  line-height: 1.45;
+  color: #FF8C42;
+}
+.menu__block--left {
+  max-width: 681px;
+}
+.menu__subBlockItem {
+  margin-bottom: 85px;
+}
+.menu__subTitle {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.menu__list {
+  font-size: 2rem;
+}
+.menu__listItem {
+  margin-bottom: 33px;
+}
+.menu__block--right {
+  max-width: 598px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.menu__list3Item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 77px;
+}
+.menu__list3Item h4 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.menu__list3Item p {
+  font-size: 1.25rem;
+  line-height: 137.5%;
+  text-transform: lowercase;
+}
+.menu__itemContainer {
+  max-width: 346px;
+}
+.menu__btn {
+  width: 247px;
+  height: 64px;
+  font-family: "Kosugi";
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1;
+  text-transform: capitalize;
+  color: #FFDDC8;
+  background: #FF8C42;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.pizza_cost {
+  font-size: 2.5rem;
+}
