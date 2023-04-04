@@ -207,7 +207,6 @@ $main-txt-day: #FF5B00;
         max-width: 1825px;
         display: flex;
         gap: 4px;
-        // justify-content: end;
     }
     &__img {
         padding-top: 160px;
@@ -238,8 +237,6 @@ $main-txt-day: #FF5B00;
     }
 
     &__block--left {
-        // display: flex;
-        // flex-direction: column;
         max-width: 681px;
     }
 
@@ -266,8 +263,6 @@ $main-txt-day: #FF5B00;
         display: flex;
         flex-direction: column;
     }
-
-    &__list3 {}
 
     &__list3Item {
         display: flex;
@@ -303,4 +298,100 @@ $main-txt-day: #FF5B00;
 }
 .pizza_cost{
     font-size: 2.5rem;
+}
+.banner {
+    background: $bg-night;
+    color: $secondary-txt;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    text-transform: capitalize;
+    display: flex;
+    gap: 220px;
+    position: relative;
+    overflow: hidden;
+    
+    &__img {
+        z-index: 1;
+    }
+
+    &__title {
+        color: $third-txt;
+        font-size: 4rem;
+        line-height: 1.25;
+        max-width: 700px;
+        text-align: center;
+        margin: 132px 0 16px;
+    }
+
+    &__title--orange {
+        color: $main-txt
+    }
+
+    &__title--orange--big {
+        font-size: 6rem;
+        line-height: 1.25;
+        letter-spacing: 0.085em;
+        text-transform: uppercase;
+        color: $main-txt
+    }
+    &__menu {
+        width: 765px;
+        padding-top: 293px;
+        z-index: 1;
+        
+    }
+    &__line{
+        position: absolute;
+        bottom: 0;
+        left: 28%;
+        z-index: 0;
+    }
+    &__list {
+        width: 100%;
+        font-size: 2.25rem;
+        line-height: 1.25;
+        letter-spacing: 0.085em;
+    }
+
+    &__item {
+        width: 100%;
+        list-style: disc;
+        margin-bottom: 40px;
+        &:nth-child(1){
+            margin-left: 207px;
+        }
+         &:nth-child(2){
+            margin-left: 165px;
+        }
+        &:nth-child(3){
+            margin-left: 123px;
+        }
+        &:nth-child(4){
+            margin-left: 82px;
+        }
+        &:nth-child(5){
+            margin-left: 40px;
+        }
+    }
+    
+
+    &__btnContainer {
+        margin-top: 121px;
+        display: flex;
+        justify-content: space-evenly;
+        // gap: 113px;
+        a{
+            width: 201px;
+            height: 60px;
+            background: $main-txt;
+            color: $third-txt;
+            border-radius: 5px;
+            text-transform: capitalize;
+            font-size: 18px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }

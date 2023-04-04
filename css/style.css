@@ -258,3 +258,103 @@
 .pizza_cost {
   font-size: 2.5rem;
 }
+
+.banner {
+  background: #151515;
+  color: #FFDDC8;
+  font-family: "Quicksand";
+  font-weight: 600;
+  text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 220px;
+  position: relative;
+  overflow: hidden;
+}
+.banner__img {
+  z-index: 1;
+}
+.banner__title {
+  color: #FFFFFF;
+  font-size: 4rem;
+  line-height: 1.25;
+  max-width: 700px;
+  text-align: center;
+  margin: 132px 0 16px;
+}
+.banner__title--orange {
+  color: #FF8C42;
+}
+.banner__title--orange--big {
+  font-size: 6rem;
+  line-height: 1.25;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  color: #FF8C42;
+}
+.banner__menu {
+  width: 765px;
+  padding-top: 293px;
+  z-index: 1;
+}
+.banner__line {
+  position: absolute;
+  bottom: 0;
+  left: 28%;
+  z-index: 0;
+}
+.banner__list {
+  width: 100%;
+  font-size: 2.25rem;
+  line-height: 1.25;
+  letter-spacing: 0.085em;
+}
+.banner__item {
+  width: 100%;
+  list-style: disc;
+  margin-bottom: 40px;
+}
+.banner__item:nth-child(1) {
+  margin-left: 207px;
+}
+.banner__item:nth-child(2) {
+  margin-left: 165px;
+}
+.banner__item:nth-child(3) {
+  margin-left: 123px;
+}
+.banner__item:nth-child(4) {
+  margin-left: 82px;
+}
+.banner__item:nth-child(5) {
+  margin-left: 40px;
+}
+.banner__btnContainer {
+  margin-top: 121px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.banner__btnContainer a {
+  width: 201px;
+  height: 60px;
+  background: #FF8C42;
+  color: #FFFFFF;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
