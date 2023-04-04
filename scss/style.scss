@@ -379,7 +379,6 @@ $main-txt-day: #FF5B00;
         margin-top: 121px;
         display: flex;
         justify-content: space-evenly;
-        // gap: 113px;
         a{
             width: 201px;
             height: 60px;
@@ -395,3 +394,113 @@ $main-txt-day: #FF5B00;
         }
     }
 }
+       
+.reservation {
+    background: $bg-night;
+    color: $third-txt;
+    font-family: 'Quicksand';
+    font-weight: 600;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    height: 1080px;
+    padding-right: 140px;
+    &__img {
+        position: absolute;
+        &:nth-child(1){
+            left: 0;
+            top: 40px;
+        }
+        &:nth-child(2) {
+            bottom: 0;
+            left: 30%;
+        }
+        &:nth-child(3) {
+            bottom: 12%;
+            left: 28%;
+        }
+        &:nth-child(4) {
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    &__container {
+
+    }
+
+    // .reservation__text
+
+    &__text {
+        margin: 20px 0 35px;
+        text-align: right;
+    }
+
+    // .reservation__form
+
+    &__form {
+        padding: 38px 80px;
+        background: rgba(255, 255, 255, 0.05);
+        border-width: 3px 1px 1px 3px;
+        border-style: solid;
+        border-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(1px);
+        border-radius: 10px;
+        max-width: 626px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.form {
+    &__container{
+        margin-top: 205px;
+        width: 424px;
+        // display: flex;
+        // -ms-flex-direction: column;
+        label{
+            display: block;
+            display: flex;
+            
+        }
+        input{
+            width: 100%;
+            margin-bottom: 43px;
+            // background: transparent;
+            // border-bottom: 2px dashed #FFFFFF;
+            &:nth-last-child(){
+                margin-bottom: 76px;
+            }
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 1.25;
+        text-transform: uppercase;
+        color: $fourth-txt;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 0.88rem;
+        line-height: 1.29;
+        a{
+            color: inherit;
+        }
+    }
+    &__btn{
+        background: $main-txt;
+        color: inherit;
+        border-radius: 5px;
+        width: 155px;
+        height: 42px;
+        margin-bottom: 225px;
+        display: block;
+    }
+}
+
