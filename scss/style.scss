@@ -404,8 +404,8 @@ $main-txt-day: #FF5B00;
     display: flex;
     justify-content: end;
     position: relative;
-    height: 1080px;
-    padding-right: 140px;
+    // height: 1080px;
+    padding: 0 140px 76px  0;
     &__img {
         position: absolute;
         &:nth-child(1){
@@ -430,17 +430,13 @@ $main-txt-day: #FF5B00;
 
     }
 
-    // .reservation__text
-
     &__text {
         margin: 20px 0 35px;
         text-align: right;
     }
 
-    // .reservation__form
-
     &__form {
-        padding: 38px 80px;
+        padding: 38px 80px 0;
         background: rgba(255, 255, 255, 0.05);
         border-width: 3px 1px 1px 3px;
         border-style: solid;
@@ -457,21 +453,28 @@ $main-txt-day: #FF5B00;
     &__container{
         margin-top: 205px;
         width: 424px;
-        // display: flex;
-        // -ms-flex-direction: column;
         label{
             display: block;
             display: flex;
-            
+            font-size: 1.31rem;
+            line-height: 1.24;
+            gap:10px;
+            margin-bottom: 43px;
+            div{
+                flex: 1 0 auto;
+            }
+            &:last-child{
+                margin-bottom: 76px;
+            }
         }
         input{
             width: 100%;
-            margin-bottom: 43px;
-            // background: transparent;
-            // border-bottom: 2px dashed #FFFFFF;
-            &:nth-last-child(){
-                margin-bottom: 76px;
-            }
+            background: transparent;
+            border-bottom: 2px dashed $third-txt;
+            font-size: 1.31rem;
+            line-height: 1.24;
+            color: $third-txt;
+            padding: 0 10px;
         }
     }
     &__title {
@@ -501,6 +504,9 @@ $main-txt-day: #FF5B00;
         height: 42px;
         margin-bottom: 225px;
         display: block;
+        font-size: 1.31rem;
+        line-height: 1.24;
+        font-weight: 600;
     }
 }
 
