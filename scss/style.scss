@@ -3,8 +3,8 @@
 
     $bg-night: #151515;
         $small-bg: #FFFFFF;
-        $bg-transparency5: rgba(255, 255, 255, 0.05);
-        $bg-transparency2: rgba(255, 255, 255, 0.2);
+        $bg-contactForm: rgba(255, 255, 255, 0.05);
+        $bg-orderForm: rgba(255, 255, 255, 0.2);
         $header-transparency: rgba(255, 255, 255, 0.05);
     
         $border4: rgba(255, 255, 255, 0.4);
@@ -46,6 +46,14 @@ $main-txt-day: #FF5B00;
     align-items: center;
     justify-content: center;
 }
+%orderForm {
+    background: $bg-orderForm;
+    border-width: 2px 0px 0px 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(1px);
+    border-radius: 5px;
+}
 
 // 'Kosugi', 'Kaushan Script'
 
@@ -53,7 +61,7 @@ $main-txt-day: #FF5B00;
     font-family: 'Quicksand';
 }
 .wrapper {
-    max-width: 1920px;
+    width: 1920px;
     margin: 0 auto;
     position: relative;
 }
@@ -76,6 +84,7 @@ $main-txt-day: #FF5B00;
         font-weight: 600;
         font-size: 3rem;
         line-height: 1.25;
+        color: $main-txt;
     }
 
     &__nav {
@@ -403,7 +412,6 @@ $main-txt-day: #FF5B00;
     display: flex;
     justify-content: end;
     position: relative;
-    // height: 1080px;
     padding: 0 140px 76px  0;
     &__img {
         position: absolute;
@@ -436,7 +444,7 @@ $main-txt-day: #FF5B00;
 
     &__form {
         padding: 38px 80px 0;
-        background: rgba(255, 255, 255, 0.05);
+        background: $bg-contactForm;
         border-width: 3px 1px 1px 3px;
         border-style: solid;
         border-color: rgba(255, 255, 255, 0.5);
@@ -508,4 +516,331 @@ $main-txt-day: #FF5B00;
         font-weight: 600;
     }
 }
+.order {
+    position: relative;
+    &>img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    font-family: 'Quicksand';
+    font-weight: 600;
+    background: $bg-night;
+    color: $third-txt;
+    &__header {
+        background: $header-transparency;
+        padding: 43px 0 27px;
+    }
 
+    &__headerContainer {
+        max-width: 1720px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    &__headerLinks {
+        margin-right: 83px;
+        display: flex;
+        gap: 60px;
+        a{
+            color: #ffffff;
+            font-size: 2.25rem;
+            line-height: 1.25;
+        }
+    }
+
+    // &__body {}
+
+    &__container {
+        max-width: 1626px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 86px 0;
+    }
+
+    &__userInfo {
+        flex: 0 1 990px;
+    }
+
+    &__account {
+        margin-bottom: 90px;
+        @extend %orderForm;
+        padding: 28px 50px;
+        position: relative;
+        
+    }
+    
+
+    &__accountTitle {
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 1.25;
+        margin-bottom: 20px;
+    }
+
+    &__accountText {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.25;
+        margin-bottom: 32px;
+    }
+    &__btns{
+        display: flex;
+        gap: 30px;
+    }
+    &__logBtn, &__signBtn {
+        width: 142px;
+        height: 36px;
+        background: transparent;
+        border: 1px solid $main-txt;
+        border-radius: 5px;
+        @extend %flexcenter;
+        flex-direction: column;
+        font-weight: 700;
+        font-size: 0.75rem;
+        line-height: 1.25;
+        color: inherit;
+        span{
+            text-decoration-line: underline;
+            color: $main-txt;
+        }
+    }
+
+    &__signBtn {}
+
+    &__icon {
+        position: absolute;
+        left: -46px;
+        top: calc(50% - 35px);
+        background: $third-txt;
+        color: $icons-clr;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        font-size: 45px;
+        @extend %flexcenter;
+    }
+
+    &__address {
+        position: relative;
+        background: $bg-orderForm;
+        margin-bottom: 90px;
+        max-width: 990px;
+        padding: 28px 50px;
+        @extend %orderForm;
+    }
+
+    &__payment {
+        position: relative;
+        background: $bg-orderForm;
+        max-width: 990px;
+        padding: 28px 50px;
+        @extend %orderForm;
+    }
+
+    &__paymentTitle, &__addressTitle {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1.25;
+}
+
+    &__form {
+        width: 465px;
+        @extend %orderForm;
+        z-index: 1;
+        margin-left: 20px;
+        padding: 27px;
+
+    }
+
+    &__formTitleBlock {
+        display: flex;
+        gap: 15px;
+        margin: 0 0 57px 7px;
+    }
+
+    &__formTitle {
+        margin: 16px 0 16px;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 1.25;
+    }
+
+    &__formSubtitle {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+}
+
+.orderBlock {
+    border-left: 3px solid $main-txt;
+    padding-left: 10px;
+    margin-bottom: 65px;
+    &__promocode {
+        color: $main-txt;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.25;
+        margin-bottom: 20px;
+        span{
+            color: $fourth-txt;
+        }
+    }
+
+    &__choice {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 35px;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.25;
+        color: $main-txt;
+        text-align: right;
+        div:last-child{
+            font-weight: 600;
+            font-size: 0.7rem;
+            line-height: 0.75;
+            color: $fourth-txt;
+        }
+        span{
+           color: $main-txt;
+           margin-left: 5px;
+           font-size: 1rem;
+        }
+    }
+
+    &__add {
+        display: flex;
+        background: $add-btn;
+        color: $add;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.25;
+        border-radius: 5px;
+        width: 97px;
+        height: 24px;
+        div{
+            flex: 0 0 33.33%;
+            @extend %flexcenter;
+            cursor: pointer;
+            &:nth-child(2){
+                cursor:auto;
+            }
+        }
+    }
+
+    &__cost {
+        font-size: 0.7rem;
+        line-height: 0.75;
+        color: $coast;
+        div:first-child{
+            text-decoration-line: line-through;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__link {
+        font-size: 0.75rem;
+        line-height: 1.25;
+        color: $message-link;
+        text-decoration: underline;
+    }
+}
+.bill {
+
+    &_title {
+        font-size: 1.25rem;
+        line-height: 1.25;
+        color: $main-txt;
+        margin-bottom: 35px;
+    }
+
+    &__list {
+        width: 230px;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 1.25;
+        text-transform: capitalize;
+    }
+
+    &__total {
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    &__totalPrice {}
+
+    &__delivery {
+        padding-bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 3px solid $line-border;
+    }
+
+    &__deliveryPrice {
+        text-decoration-line: line-through;
+        font-size: 0.5rem;
+    }
+
+    &__deliveryFree {
+        color: $free;
+        text-transform: uppercase;
+    }
+
+    &__discount {
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 3px solid $line-border;
+    }
+
+    &__discountPrice {
+        color: $free;
+    }
+
+    &__tax {
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 3px solid $line2;
+    }
+
+    &__taxPrice {
+        color: $line2;
+    }
+
+    &__toPay {
+        margin: 24px 0 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__toPayPrice {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+}
+
+.icon-pizza {}
+
+.icon-question, .icon-user-add {margin-right: 10px;}
+
+.icon-user-add {}
+
+.icon-user {}
+
+.icon-marker {margin-top: 4px;}
+
+.icon-card {font-size: 27px;}

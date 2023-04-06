@@ -172,14 +172,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="order__body">
+                <!-- <div class="order__body"> -->
                     <div class="order__container">
                         <div class="order__userInfo">
                             <div class="order__account">
                                 <h2 class="order__accountTitle">Account</h2>
                                 <p class="order__accountText">To place your order now, log in to your existing account or sign up.</p>
-                                <button class="order__logBtn">Have an account ?<span>Log in</span></button>
-                                <button class="order__signBtn">New to Mania ?<span>Sign in</span></button>
+                                <div class="order__btns">
+                                    <button class="order__logBtn">Have an account ?<span>Log in</span></button>
+                                    <button class="order__signBtn">New to Mania ?<span>Sign in</span></button>
+                                </div>
                                 <div class="order__icon"><span class="icon-user"></span></div>
                             </div>
                             <div class="order__address">
@@ -199,13 +201,41 @@
                                     <p class="order__formSubtitle">delivered to this location</p>
                                 </div>
                             </div>
-                            <div class="order__orderBlock"></div>
-                            <div class="order__billBlock"></div>
+                            <div class="orderBlock">
+                                <div class="orderBlock__promocode">Apply your coupon code <span># xxxx xxxx</span></div>
+                                <div class="orderBlock__choice">
+                                    <div class="orderBlock__name">
+                                        <div>Cheese Pizza </div>
+                                        <div>Customize<span>></span></div>
+                                    </div>
+                                    <div class="orderBlock__add">
+                                        <div>-</div>
+                                        <div>1</div>
+                                        <div>+</div>
+                                    </div>
+                                    <div class="orderBlock__cost">
+                                        <div>200$</div>
+                                        <div>180$</div>
+                                    </div>
+                                </div>
+                                <a href="#" class="orderBlock__link">" Any message to your Loving one ? "</a>
+                            </div>
+                            <div class="bill">
+                                <ul class="bill__list">
+                                    <li class="bill_title">Bill Details</li>
+                                    <li class="bill__total">Item total <span class="bill__totalPrice">$180</span></li>
+                                    <li class="bill__delivery">Delivery partner<span class="bill__deliveryPrice">$19.00</span><span class="bill__deliveryFree">FREE</span></li>
+                                    <li class="bill__discount">Item Discount<span class="bill__discountPrice">-$20</span></li>
+                                    <li class="bill__tax">Taxes and Charges<span class="bill__taxPrice">$2.00</span></li>
+                                    <li class="bill__toPay">To Pay<span class="bill__toPayPrice">$182</span></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <img src="./img/Pizza-slice.png" alt="slice of pizza">
+                <!-- </div> -->
             </section>
         </main>
     </div>
     <script src="./js/main.js"></script>
-</body>delivered to this location
+</body>
