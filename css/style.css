@@ -25,12 +25,14 @@
 }
 
 .wrapper {
+  width: 100%;
   max-width: 1920px;
   margin: 0 auto;
   position: relative;
 }
 
 .header {
+  width: 100%;
   background: #151515;
   padding: 43px 0;
   color: #FF8C42;
@@ -258,7 +260,7 @@
   font-size: 1.5rem;
   line-height: 1;
   text-transform: capitalize;
-  color: #FFDDC8;
+  color: #FFFFFF;
   background: #FF8C42;
   border-radius: 5px;
   margin: 0 auto;
@@ -656,7 +658,7 @@
   margin-bottom: 20px;
 }
 .orderBlock__promocode span {
-  color: #DDDDDD;
+  color: #FFFFFF;
 }
 .orderBlock__choice {
   display: -webkit-box;
@@ -679,7 +681,7 @@
   font-weight: 600;
   font-size: 0.7rem;
   line-height: 0.75;
-  color: #DDDDDD;
+  color: #FFFFFF;
 }
 .orderBlock__name span {
   color: #FF8C42;
@@ -818,4 +820,12 @@
 
 .icon-card {
   font-size: 27px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
 }

@@ -1,0 +1,184 @@
+.orderBlock__add div, .order__icon, .order__logBtn, .order__signBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.order__form, .order__payment, .order__address, .order__account, .reservation__form {
+  background: rgba(217, 217, 217, 0.59);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: none;
+   -webkit-box-shadow: 10px 19px 30px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 19px 30px 5px rgba(0, 0, 0, 0.25);
+}
+
+.header {
+  background: #F4F4F4;
+  color: #FF5B00;
+}
+.header__logo {
+  color: #FF5B00;
+}
+.header__navItem a {
+  color: inherit;
+}
+
+.home {
+  background: #F4F4F4;
+  color: #FF5B00;
+}
+.home__search input {
+  border: 4px solid #FF5B00;
+  background: #F4F4F4;
+  color: #1E1E1E;
+}
+.home__searchBtn {
+  color: #FFFFFF;
+  background: #FF5B00;
+  border: 4px solid #FF5B00;
+}
+.home__btn {
+  background: #FF5B00;
+  color: #FFFFFF;
+}
+
+.menu {
+  background: #F4F4F4;
+}
+.menu__content {
+  color: #7B3000;
+}
+.menu__title {
+  color: #FF5B00;
+}
+.menu__btn {
+  color: #FFFFFF;
+  background: #FF5B00;
+}
+
+.banner {
+  background: #F4F4F4;
+  color: #7B3000;
+}
+.banner__title {
+  color: #1E1E1E;
+}
+.banner__title--orange {
+  color: #FF5B00;
+}
+.banner__title--orange--big {
+  color: #FF5B00;
+}
+.banner__btnContainer a {
+  background: #FF5B00;
+  color: #FFFFFF;
+}
+
+.reservation {
+  background: #F4F4F4;
+  color: #1E1E1E;
+}
+.reservation__form {
+  background: rgba(217, 217, 217, 0.59);
+}
+
+.form__container input {
+  border-bottom: 2px dashed #1E1E1E;
+  color: #1E1E1E;
+}
+.form__title {
+  color: #FF5B00;
+}
+.form__text a {
+  color: inherit;
+}
+.form__btn {
+  background: #FF5B00;
+  color: inherit;
+}
+
+.order {
+  background: #F4F4F4;
+  color: #1E1E1E;
+}
+.order__header {
+  background: #212121;
+}
+.order__headerLinks a {
+  color: #FFFFFF;
+}
+.order__logBtn, .order__signBtn {
+  border: 1px solid #FF5B00;
+  color: inherit;
+}
+.order__logBtn span, .order__signBtn span {
+  color: #FF5B00;
+}
+.order__icon {
+  background: #1E1E1E;
+  color: #FF5B00;
+}
+.order__address {
+  background: rgba(217, 217, 217, 0.59);
+}
+.order__payment {
+  background: rgba(217, 217, 217, 0.59);
+}
+.orderBlock {
+  border-left: 3px solid #FF5B00;
+}
+.orderBlock__promocode {
+  color: #FF5B00;
+}
+.orderBlock__promocode span {
+  color: #1E1E1E;
+}
+.orderBlock__name {
+  color: #FF5B00;
+}
+.orderBlock__name div:last-child {
+  color: #1E1E1E;
+}
+.orderBlock__name span {
+  color: #FF5B00;
+}
+.orderBlock__add {
+  background: #D9D9D9;
+  color: #3E5440;
+}
+.orderBlock__cost {
+  color: #FF4141;
+}
+.orderBlock__link {
+  color: #F461A8;
+}
+
+.bill_title {
+  color: #FF5B00;
+}
+.bill__delivery {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.67);
+}
+.bill__deliveryFree {
+  color: #026F0D;
+}
+.bill__discount {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.67);
+}
+.bill__discountPrice {
+  color: #026F0D;
+}
+.bill__tax {
+  border-bottom: 3px solid #000000;
+}
+.bill__taxPrice {
+  color: #000000;
+}

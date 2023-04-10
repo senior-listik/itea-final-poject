@@ -14,6 +14,7 @@
         $secondary-txt: #FFDDC8;
         $third-txt: #FFFFFF;
         $fourth-txt: #DDDDDD;
+        $white-color-txt: #FFFFFF;
     
         $coast: #FF4141;
         $add: #019310;
@@ -27,20 +28,6 @@
     
         $add-btn: #D9D9D9;
 
-
-//day
-$bg-day:#F4F4F4;
-// $bg-card: #D9D9D9;
-// $bg-transparency59: rgba(217, 217, 217, 0.59);
-// $bg-header: #212121;
-
-$main-txt-day: #FF5B00;
-// $secondary-txt: #7B3000;
-// $third-txt: #1E1E1E;
-
-// $add: #3E5440;
-// $free: #026F0D;
-// $line-border: rgba(0, 0, 0, 0.67);
 %flexcenter {
     display: flex;
     align-items: center;
@@ -55,20 +42,18 @@ $main-txt-day: #FF5B00;
     border-radius: 5px;
 }
 
-// 'Kosugi', 'Kaushan Script'
-
 .body{
     font-family: 'Quicksand';
 }
 .wrapper {
+    width: 100%;
     max-width: 1920px;
     margin: 0 auto;
     position: relative;
 }
 
 .header {
-    // z-index: 1;
-    // width: 100%;
+    width: 100%;
     background: $bg-night;
     padding: 43px 0;
     color: $main-txt;
@@ -160,7 +145,7 @@ $main-txt-day: #FF5B00;
     }
 
     &__searchBtn {
-        color: $third-txt;
+        color: $white-color-txt;
         background: $main-txt;
         font-weight: 600;
         font-size: 1.25rem;
@@ -174,7 +159,7 @@ $main-txt-day: #FF5B00;
     &__btn{
         background: $main-txt;
         border-radius: 5px;
-        color: $third-txt;
+        color: $white-color-txt;
         padding: 19px 49px;
         font-weight: 600;
         font-size: 1.5rem;
@@ -298,7 +283,7 @@ $main-txt-day: #FF5B00;
         font-size: 1.5rem;
         line-height: 1;
         text-transform: capitalize;
-        color: $secondary-txt;
+        color: $white-color-txt;
         background: $main-txt;
         border-radius: 5px;
         margin: 0 auto;
@@ -391,7 +376,7 @@ $main-txt-day: #FF5B00;
             width: 201px;
             height: 60px;
             background: $main-txt;
-            color: $third-txt;
+            color: $white-color-txt;
             border-radius: 5px;
             text-transform: capitalize;
             font-size: 18px;
@@ -688,7 +673,7 @@ $main-txt-day: #FF5B00;
         line-height: 1.25;
         margin-bottom: 20px;
         span{
-            color: $fourth-txt;
+            color: $third-txt;
         }
     }
 
@@ -709,7 +694,7 @@ $main-txt-day: #FF5B00;
             font-weight: 600;
             font-size: 0.7rem;
             line-height: 0.75;
-            color: $fourth-txt;
+            color: $third-txt;
         }
         span{
            color: $main-txt;
@@ -844,3 +829,11 @@ $main-txt-day: #FF5B00;
 .icon-marker {margin-top: 4px;}
 
 .icon-card {font-size: 27px;}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
