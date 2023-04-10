@@ -168,12 +168,15 @@
     &__img {
         padding-top: 23px;
         margin-left: 145px;
+        height: 697px;
         max-width: 972px;
-        img{
-            -webkit-mask: url(../img/1.svg);
-            -webkit-mask-repeat: no-repeat;
-            -webkit-mask-size: 100% 100%;
-         }
+        width: 100%;
+        background: url(../img/home.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-mask: url(../img/mask.png);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: cover;
     }
 
     &__toggle {

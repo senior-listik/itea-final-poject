@@ -140,12 +140,15 @@
 .home__img {
   padding-top: 23px;
   margin-left: 145px;
+  height: 697px;
   max-width: 972px;
-}
-.home__img img {
-  -webkit-mask: url(../img/1.svg);
+  width: 100%;
+  background: url(../img/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-mask: url(../img/mask.png);
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
+  -webkit-mask-size: cover;
 }
 .home__toggle {
   position: absolute;
