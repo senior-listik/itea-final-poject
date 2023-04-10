@@ -5,7 +5,6 @@ const linkTheme = document.querySelector('[title="theme"]');
 let themeUrl = "./css/day-theme.css"; //path to css file with light styles
 
 dayToggle.addEventListener('click', toggleTheme);
-dayToggle.addEventListener('touchend', toggleTheme);
 
 
 // the function of switching styles by connecting a css file with light styles + switching icons
