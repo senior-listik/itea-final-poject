@@ -61,14 +61,14 @@ $main-txt-day: #FF5B00;
     font-family: 'Quicksand';
 }
 .wrapper {
-    width: 1920px;
+    max-width: 1920px;
     margin: 0 auto;
     position: relative;
 }
 
 .header {
-    z-index: 1;
-    width: 100%;
+    // z-index: 1;
+    // width: 100%;
     background: $bg-night;
     padding: 43px 0;
     color: $main-txt;

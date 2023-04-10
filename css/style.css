@@ -25,14 +25,12 @@
 }
 
 .wrapper {
-  width: 1920px;
+  max-width: 1920px;
   margin: 0 auto;
   position: relative;
 }
 
 .header {
-  z-index: 1;
-  width: 100%;
   background: #151515;
   padding: 43px 0;
   color: #FF8C42;
