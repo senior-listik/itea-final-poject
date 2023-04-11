@@ -34,6 +34,12 @@
 .home {
   background: #F4F4F4;
   color: #FF5B00;
+  background-image: url(../img/mask.png);
+  background-repeat: no-repeat;
+  background-position: 90% 10%;
+}
+.home__content {
+  background: rgba(244, 244, 244, 0.85);
 }
 .home__search input {
   border: 4px solid #FF5B00;
@@ -57,6 +63,7 @@
 }
 .menu__content {
   color: #7B3000;
+  background: rgba(244, 244, 244, 0.85);
 }
 .menu__title {
   color: #FF5B00;
@@ -183,4 +190,9 @@
 }
 .bill__taxPrice {
   color: #000000;
+}
+
+.visible .header__menu .header__navItem {
+  background: #F4F4F4;
+  border: 1px solid #FF5B00;
 }
