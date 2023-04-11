@@ -204,36 +204,34 @@
     background-image: url(../img/Pizza.png);
     background-repeat: no-repeat;
     background-position: 0 60%;
-    padding: 0px 95px 70px 0;
+    padding: 0px 0 70px 0;
    
     &__container{
         width: 100%;
         max-width: 1825px;
+        background: $bg-main-transp;
         display: flex;
-        gap: 4px;
-        justify-content: end;
+        flex-direction: column;
+        align-items: end;
     }
 
     &__content {
         max-width: 1370px;
+        width: 100%;
         font-family: 'Kosugi';
         font-weight: 400;
-        background: $bg-main-transp;
         backdrop-filter: blur(1px);
-        padding-left: 30px;
+        padding: 0 1.9rem;
         color: $secondary-txt;
         text-transform: capitalize;
         line-height: 1;
-
-       &>div{
         display: flex;
         flex-wrap: wrap;
-        gap: 100px;
-        width: 100%;
-       }
+        justify-content: space-between;
     }
 
     &__title {
+        max-width: 1370px;
         width: 100%;
         text-align: center;
         font-family: 'Kaushan Script';

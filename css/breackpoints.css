@@ -11,6 +11,9 @@
   .wrapper {
     max-width: 1440px;
   }
+  .menu__container {
+    width: 100%;
+  }
   .menu__content {
     width: 100%;
   }
