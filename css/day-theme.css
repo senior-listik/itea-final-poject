@@ -16,7 +16,7 @@
           backdrop-filter: blur(1px);
   border-radius: 10px;
   border: none;
-   -webkit-box-shadow: 10px 19px 30px 5px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 10px 19px 30px 5px rgba(0, 0, 0, 0.25);
           box-shadow: 10px 19px 30px 5px rgba(0, 0, 0, 0.25);
 }
 
@@ -37,7 +37,6 @@
 }
 .home__search input {
   border: 4px solid #FF5B00;
-  background: #F4F4F4;
   color: #1E1E1E;
 }
 .home__searchBtn {
@@ -52,6 +51,9 @@
 
 .menu {
   background: #F4F4F4;
+  background-image: url(../img/Pizza.png);
+  background-repeat: no-repeat;
+  background-position: 0 60%;
 }
 .menu__content {
   color: #7B3000;

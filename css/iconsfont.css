@@ -1,6 +1,6 @@
 @font-face {
   font-family: "icons";
-  src: url("../fonts/icons.ttf?cki350") format("truetype"), url("../fonts/icons.woff?cki350") format("woff"), url("../fonts/icons.svg?cki350#icons") format("svg");
+  src: url("../fonts/icons.ttf?alpevb") format("truetype"), url("../fonts/icons.woff?alpevb") format("woff"), url("../fonts/icons.svg?alpevb#icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -20,38 +20,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-magnifier:before {
+.icon-burger:before {
   content: "\e900";
 }
 
-.icon-card:before {
+.icon-magnifier:before {
   content: "\e901";
 }
 
-.icon-marker:before {
+.icon-card:before {
   content: "\e902";
 }
 
-.icon-user:before {
+.icon-marker:before {
   content: "\e903";
 }
 
-.icon-user-add:before {
+.icon-user:before {
   content: "\e904";
 }
 
-.icon-question:before {
+.icon-user-add:before {
   content: "\e905";
 }
 
-.icon-night:before {
+.icon-question:before {
   content: "\e906";
 }
 
-.icon-day:before {
+.icon-night:before {
   content: "\e907";
 }
 
-.icon-pizza:before {
+.icon-day:before {
   content: "\e908";
+}
+
+.icon-pizza:before {
+  content: "\e909";
 }
