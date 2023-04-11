@@ -8,7 +8,7 @@ function showMenu() {
     burger.classList.toggle('rotate');
     navMenu.classList.toggle('visible');
 }
-
+navMenu.addEventListener('click', showMenu);
 document.querySelector('main').addEventListener('click', function () {
     if (navMenu.classList.contains('visible')) {
         navMenu.classList.remove('visible');

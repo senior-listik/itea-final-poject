@@ -192,7 +192,7 @@
   color: #000000;
 }
 
-.visible .header__menu .header__navItem {
+.visible .header__menu .header__navItem a {
   background: #F4F4F4;
   border: 1px solid #FF5B00;
 }
