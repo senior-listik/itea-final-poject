@@ -17,6 +17,10 @@
   .menu__content {
     width: 100%;
   }
+  .banner__title {
+    max-width: 550px;
+    left: 60px;
+  }
 }
 @media (max-width: 1200px) {
   html {
@@ -37,6 +41,27 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .banner__title {
+    top: 60px;
+    left: 0;
+    min-width: 100%;
+    padding: 0 150px;
+  }
+  .banner__menu, .banner__item, .banner__btnContainer {
+    -webkit-transform: skew(0deg);
+        -ms-transform: skew(0deg);
+            transform: skew(0deg);
+  }
+  .banner__menu {
+    width: 100%;
+  }
+  .banner__list {
+    font-size: 3rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 992px) {
   html {
@@ -51,6 +76,22 @@
   .icon-burger {
     display: block;
   }
+  .banner__title {
+    top: 60px;
+    left: 0;
+    min-width: 100%;
+    padding: 0 150px;
+  }
+  .banner__menu {
+    border: none;
+    min-width: 100%;
+  }
+  .banner__list {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 600px) {
   html {
@@ -63,6 +104,29 @@
     width: 100%;
   }
   .home__searchBtn {
+    width: 100%;
+  }
+  .banner__title {
+    top: 40px;
+    left: 0;
+    min-width: 100%;
+    padding: 0 40px;
+    font-size: 3rem;
+  }
+  .banner__title--orange--big {
+    font-size: 4rem;
+  }
+  .banner__menu {
+    padding: 200px 1.9rem 50px;
+  }
+  .banner__item {
+    margin-left: 0;
+    font-size: 2.25rem;
+  }
+  .banner__btnContainer {
+    margin-top: 50px;
+  }
+  .banner__btnContainer a {
     width: 100%;
   }
 }

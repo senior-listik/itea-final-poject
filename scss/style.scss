@@ -209,7 +209,6 @@
     background-image: url(../img/Pizza.png);
     background-repeat: no-repeat;
     background-position: 0 60%;
-    padding: 0px 0 70px 0;
    
     &__container{
         width: 100%;
@@ -225,7 +224,7 @@
         font-family: 'Kosugi';
         font-weight: 400;
         backdrop-filter: blur(1px);
-        padding: 0 1.9rem;
+        padding: 0 1.9rem 70px;
         background: $bg-main-transp;
         color: $secondary-txt;
         text-transform: capitalize;
@@ -327,38 +326,35 @@
         margin: 0 auto;
     }
 }
-// .grid{
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     &__item{
-        
-//     }
-// }
+
 .pizza_cost{
     font-size: 2.5rem;
 }
 .banner {
     background: $bg-night;
+    background-image: url(../img/hands-taking-pizza.png); 
+    background-repeat: no-repeat;
+    background-position: left bottom; 
     color: $secondary-txt;
     font-family: 'Quicksand';
     font-weight: 600;
     text-transform: capitalize;
     display: flex;
-    gap: 220px;
+    justify-content: end;
     position: relative;
     overflow: hidden;
     
-    &__img {
-        z-index: 1;
-    }
 
     &__title {
+        position: absolute;
+        top: 132px;
+        left: 148px;
         color: $third-txt;
         font-size: 4rem;
         line-height: 1.25;
         max-width: 700px;
         text-align: center;
-        margin: 132px 0 16px;
+        z-index: 10;
     }
 
     &__title--orange {
@@ -373,18 +369,15 @@
         color: $main-txt
     }
     &__menu {
-        width: 765px;
-        padding-top: 293px;
-        z-index: 1;
-        
+        border-left: 25px solid $main-txt;
+        min-width: 765px;
+        padding: 293px 1.9rem 133px;
+        transform: skew(331deg);
+        background: $bg-main-transp;
     }
-    &__line{
-        position: absolute;
-        bottom: 0;
-        left: 28%;
-        z-index: 0;
-    }
+    
     &__list {
+        
         width: 100%;
         font-size: 2.25rem;
         line-height: 1.25;
@@ -394,29 +387,20 @@
     &__item {
         width: 100%;
         list-style: disc;
+        margin-left: 60px;
         margin-bottom: 40px;
-        &:nth-child(1){
-            margin-left: 207px;
-        }
-         &:nth-child(2){
-            margin-left: 165px;
-        }
-        &:nth-child(3){
-            margin-left: 123px;
-        }
-        &:nth-child(4){
-            margin-left: 82px;
-        }
-        &:nth-child(5){
-            margin-left: 40px;
-        }
+        transform: skew(-331deg);
+       
     }
     
 
     &__btnContainer {
         margin-top: 121px;
         display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
         justify-content: space-evenly;
+        transform: skew(-331deg);
         a{
             width: 201px;
             height: 60px;
@@ -581,8 +565,6 @@
             line-height: 1.25;
         }
     }
-
-    // &__body {}
 
     &__container {
         max-width: 1626px;

@@ -185,7 +185,6 @@
   background-image: url(../img/Pizza.png);
   background-repeat: no-repeat;
   background-position: 0 60%;
-  padding: 0px 0 70px 0;
 }
 .menu__container {
   width: 100%;
@@ -208,7 +207,7 @@
   font-weight: 400;
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
-  padding: 0 1.9rem;
+  padding: 0 1.9rem 70px;
   background: rgba(21, 21, 21, 0.85);
   color: #FFDDC8;
   text-transform: capitalize;
@@ -329,6 +328,9 @@
 
 .banner {
   background: #151515;
+  background-image: url(../img/hands-taking-pizza.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
   color: #FFDDC8;
   font-family: "Quicksand";
   font-weight: 600;
@@ -336,20 +338,22 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 220px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   position: relative;
   overflow: hidden;
 }
-.banner__img {
-  z-index: 1;
-}
 .banner__title {
+  position: absolute;
+  top: 132px;
+  left: 148px;
   color: #FFFFFF;
   font-size: 4rem;
   line-height: 1.25;
   max-width: 700px;
   text-align: center;
-  margin: 132px 0 16px;
+  z-index: 10;
 }
 .banner__title--orange {
   color: #FF8C42;
@@ -362,15 +366,13 @@
   color: #FF8C42;
 }
 .banner__menu {
-  width: 765px;
-  padding-top: 293px;
-  z-index: 1;
-}
-.banner__line {
-  position: absolute;
-  bottom: 0;
-  left: 28%;
-  z-index: 0;
+  border-left: 25px solid #FF8C42;
+  min-width: 765px;
+  padding: 293px 1.9rem 133px;
+  -webkit-transform: skew(331deg);
+      -ms-transform: skew(331deg);
+          transform: skew(331deg);
+  background: rgba(21, 21, 21, 0.85);
 }
 .banner__list {
   width: 100%;
@@ -381,31 +383,26 @@
 .banner__item {
   width: 100%;
   list-style: disc;
+  margin-left: 60px;
   margin-bottom: 40px;
-}
-.banner__item:nth-child(1) {
-  margin-left: 207px;
-}
-.banner__item:nth-child(2) {
-  margin-left: 165px;
-}
-.banner__item:nth-child(3) {
-  margin-left: 123px;
-}
-.banner__item:nth-child(4) {
-  margin-left: 82px;
-}
-.banner__item:nth-child(5) {
-  margin-left: 40px;
+  -webkit-transform: skew(-331deg);
+      -ms-transform: skew(-331deg);
+          transform: skew(-331deg);
 }
 .banner__btnContainer {
   margin-top: 121px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-transform: skew(-331deg);
+      -ms-transform: skew(-331deg);
+          transform: skew(-331deg);
 }
 .banner__btnContainer a {
   width: 201px;
