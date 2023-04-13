@@ -353,7 +353,7 @@
   line-height: 1.25;
   max-width: 700px;
   text-align: center;
-  z-index: 10;
+  z-index: 5;
 }
 .banner__title--orange {
   color: #FF8C42;
@@ -426,6 +426,9 @@
 
 .reservation {
   background: #151515;
+  background-image: url(../img/Capcicum.png);
+  background-repeat: no-repeat;
+  background-position: 60% 10%;
   color: #FFFFFF;
   font-family: "Quicksand";
   font-weight: 600;
@@ -437,10 +440,12 @@
       -ms-flex-pack: end;
           justify-content: end;
   position: relative;
-  padding: 0 140px 76px 0;
+  padding: 0 1.9rem;
 }
 .reservation__img {
   position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .reservation__img:nth-child(1) {
   left: 0;
@@ -451,19 +456,20 @@
   left: 30%;
 }
 .reservation__img:nth-child(3) {
-  bottom: 12%;
-  left: 28%;
-}
-.reservation__img:nth-child(4) {
   bottom: 0;
   right: 0;
+}
+.reservation__container {
+  max-width: 626px;
+  width: 100%;
+  margin: 0 126px 76px 0;
 }
 .reservation__text {
   margin: 20px 0 35px;
   text-align: right;
 }
 .reservation__form {
-  padding: 38px 80px 0;
+  padding: 38px 1.9rem 0;
   background: rgba(255, 255, 255, 0.05);
   border-width: 3px 1px 1px 3px;
   border-style: solid;
@@ -471,7 +477,7 @@
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
   border-radius: 10px;
-  max-width: 626px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,15 +492,16 @@
 
 .form__container {
   margin-top: 205px;
-  width: 424px;
+  max-width: 424px;
+  width: 100%;
+  font-size: 1.31rem;
+  line-height: 1.24;
 }
 .form__container label {
   display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.31rem;
-  line-height: 1.24;
   gap: 10px;
   margin-bottom: 43px;
 }
@@ -510,10 +517,11 @@
   width: 100%;
   background: transparent;
   border-bottom: 2px dashed #FFFFFF;
-  font-size: 1.31rem;
-  line-height: 1.24;
+  font-size: inherit;
+  line-height: inherit;
   color: #FFFFFF;
   padding: 0 10px;
+  font-weight: 600;
 }
 .form__title {
   font-weight: 700;
@@ -541,8 +549,8 @@
   height: 42px;
   margin-bottom: 225px;
   display: block;
-  font-size: 1.31rem;
-  line-height: 1.24;
+  font-size: inherit;
+  line-height: inherit;
   font-weight: 600;
 }
 
@@ -906,10 +914,10 @@ input::-webkit-inner-spin-button {
 .visible .header__menu {
   background: rgba(21, 21, 21, 0.85);
   height: 100vh;
-  padding: 10px;
+  padding: 30px 10px 0;
   width: 100%;
   position: absolute;
-  top: 110%;
+  top: 95%;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;

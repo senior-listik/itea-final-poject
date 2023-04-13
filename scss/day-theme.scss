@@ -143,6 +143,9 @@ $add-btn: #D9D9D9;
 
 .reservation {
     background: $bg-night;
+    background-image: url(../img/Capcicum.png);
+    background-repeat: no-repeat;
+    background-position: 60% 10%;
     color: $third-txt;
 
     &__form {

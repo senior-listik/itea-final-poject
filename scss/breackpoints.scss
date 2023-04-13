@@ -32,7 +32,20 @@
             left: 60px;
         }
     }
+    .reservation{
+        background-position: -20% -50%;
+        &__img {
 
+            &:nth-child(1) {
+                display: none;
+            }
+            &:nth-child(2) {
+                bottom: 0;
+                left: 10%;
+            }
+    
+    }
+}
 }
 
 //1200
@@ -51,7 +64,7 @@
         }
 
         background-position: 90% 30%;
-        background-size: 80%;
+        background-size: 100%;
     }
 
     .menu__body {
@@ -82,26 +95,42 @@
             margin: 0 auto;
         }
     }
-
+        .reservation {
+            background-position: -100px -150px;
+            &__img {
+                   
+                &:nth-child(2) {
+                    bottom: 0;
+                    left: 6%;
+                }
+    
+            }
+            &__container {
+                margin: 0 auto 76px;
+            }
+        }
+        
 }
 
 //992
 @media(max-width: 992px) {
     html {
-        font-size: 11px;
+        // font-size: 11px;
     }
 
     .wrapper {
         max-width: 992px;
     }
-
-    .header__nav {
-        display: none;
+    .header{
+        position: fixed;
+        z-index: 10;
+        &__nav {
+                display: none;
+            }
     }
+    
 
-    .icon-burger {
-        display: block;
-    }
+    .icon-burger {display: block;}
 
     .banner {
         &__title {
@@ -111,39 +140,35 @@
             padding: 0 150px;
         }
 
-        &__menu {
-            border: none;
-            min-width: 100%;
-        }
+        &__menu {border: none; min-width: 100%;}
 
-        &__list {
-            width: fit-content;
-            margin: 0 auto;
-        }
+        &__list {width: fit-content; margin: 0 auto;}
     }
+        .reservation {
+            background-image: url(../img/Gobi.png);
+            background-position: right bottom;
+            &__img {&:nth-child(2) {display: none;}}
+        }
+        .form{
+            font-size: 2rem;
+            &__container { margin-top: 70px;}
+            &__title{font-size: 3rem;}
+            &__text{font-size: 1.25rem;}
+            &__btn{width: 100%; margin-bottom: 50px;}
+        }
 }
 
 //600
 @media(max-width: 600px) {
     html {
-        font-size: 9px;
+        // font-size: 9px;
     }
 
-    .wrapper {
-        max-width: 600px;
-    }
+    .wrapper {max-width: 600px;}
 
     .home {
-        &__search {
-            input {
-                width: 100%;
-            }
-        }
-
-        &__searchBtn {
-            width: 100%;
-        }
-    }
+        &__search {input {width: 100%;}}
+        &__searchBtn {width: 100%;}}
 
     .banner {
         &__title {
@@ -154,14 +179,9 @@
             font-size: 3rem;
         }
 
-        &__title--orange--big {
-            font-size: 4rem;
-        }
+        &__title--orange--big {font-size: 4rem;}
 
-        &__menu {
-            padding: 200px 1.9rem 50px;
-
-        }
+        &__menu {padding: 200px 1.9rem 50px;}
 
         &__item {
             margin-left: 0;
@@ -170,11 +190,9 @@
 
         &__btnContainer {
             margin-top: 50px;
-
-            a {
-                width: 100%;
-            }
+            a {width: 100%;}
         }
 
     }
+    
 }

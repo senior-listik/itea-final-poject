@@ -21,6 +21,16 @@
     max-width: 550px;
     left: 60px;
   }
+  .reservation {
+    background-position: -20% -50%;
+  }
+  .reservation__img:nth-child(1) {
+    display: none;
+  }
+  .reservation__img:nth-child(2) {
+    bottom: 0;
+    left: 10%;
+  }
 }
 @media (max-width: 1200px) {
   html {
@@ -31,7 +41,7 @@
   }
   .home {
     background-position: 90% 30%;
-    background-size: 80%;
+    background-size: 100%;
   }
   .home__content {
     width: 100%;
@@ -62,13 +72,24 @@
     width: fit-content;
     margin: 0 auto;
   }
+  .reservation {
+    background-position: -100px -150px;
+  }
+  .reservation__img:nth-child(2) {
+    bottom: 0;
+    left: 6%;
+  }
+  .reservation__container {
+    margin: 0 auto 76px;
+  }
 }
 @media (max-width: 992px) {
-  html {
-    font-size: 11px;
-  }
   .wrapper {
     max-width: 992px;
+  }
+  .header {
+    position: fixed;
+    z-index: 10;
   }
   .header__nav {
     display: none;
@@ -92,11 +113,31 @@
     width: fit-content;
     margin: 0 auto;
   }
+  .reservation {
+    background-image: url(../img/Gobi.png);
+    background-position: right bottom;
+  }
+  .reservation__img:nth-child(2) {
+    display: none;
+  }
+  .form {
+    font-size: 2rem;
+  }
+  .form__container {
+    margin-top: 70px;
+  }
+  .form__title {
+    font-size: 3rem;
+  }
+  .form__text {
+    font-size: 1.25rem;
+  }
+  .form__btn {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 600px) {
-  html {
-    font-size: 9px;
-  }
   .wrapper {
     max-width: 600px;
   }

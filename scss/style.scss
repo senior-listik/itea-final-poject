@@ -56,7 +56,7 @@
 
 .header {
     // position: fixed;
-    // z-index: 5;
+    // z-index: 10;
     width: 100%;
     background: $bg-night;
     padding: 2.2% 1.6%;
@@ -354,7 +354,7 @@
         line-height: 1.25;
         max-width: 700px;
         text-align: center;
-        z-index: 10;
+        z-index: 5;
     }
 
     &__title--orange {
@@ -419,6 +419,9 @@
        
 .reservation {
     background: $bg-night;
+    background-image: url(../img/Capcicum.png);
+    background-repeat: no-repeat;
+    background-position: 60% 10%;
     color: $third-txt;
     font-family: 'Quicksand';
     font-weight: 600;
@@ -426,9 +429,10 @@
     display: flex;
     justify-content: end;
     position: relative;
-    padding: 0 140px 76px  0;
+    padding: 0 1.9rem;
     &__img {
         position: absolute;
+        object-fit: cover;
         &:nth-child(1){
             left: 0;
             top: 40px;
@@ -438,17 +442,15 @@
             left: 30%;
         }
         &:nth-child(3) {
-            bottom: 12%;
-            left: 28%;
-        }
-        &:nth-child(4) {
             bottom: 0;
             right: 0;
         }
     }
 
     &__container {
-
+        max-width: 626px;
+        width: 100%;
+        margin: 0 126px 76px 0
     }
 
     &__text {
@@ -457,14 +459,14 @@
     }
 
     &__form {
-        padding: 38px 80px 0;
+        padding: 38px 1.9rem 0;
         background: $bg-contactForm;
         border-width: 3px 1px 1px 3px;
         border-style: solid;
         border-color: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(1px);
         border-radius: 10px;
-        max-width: 626px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -473,12 +475,14 @@
 .form {
     &__container{
         margin-top: 205px;
-        width: 424px;
+        max-width: 424px;
+        width: 100%;
+        font-size: 1.31rem;
+            line-height: 1.24;
         label{
             display: block;
             display: flex;
-            font-size: 1.31rem;
-            line-height: 1.24;
+            
             gap:10px;
             margin-bottom: 43px;
             div{
@@ -492,10 +496,11 @@
             width: 100%;
             background: transparent;
             border-bottom: 2px dashed $third-txt;
-            font-size: 1.31rem;
-            line-height: 1.24;
+            font-size: inherit;
+            line-height: inherit;
             color: $third-txt;
             padding: 0 10px;
+            font-weight: 600;
         }
     }
     &__title {
@@ -525,8 +530,8 @@
         height: 42px;
         margin-bottom: 225px;
         display: block;
-        font-size: 1.31rem;
-        line-height: 1.24;
+        font-size: inherit;
+        line-height: inherit;
         font-weight: 600;
     }
 }
@@ -878,10 +883,10 @@ input::-webkit-inner-spin-button {
     .header__menu {
         background: $bg-main-transp;
         height: 100vh;
-        padding: 10px;
+        padding: 30px 10px 0;
         width: 100%;
         position: absolute;
-        top: 110%;
+        top: 95%;
         right: 0;
         display: flex;
         justify-content: start;
