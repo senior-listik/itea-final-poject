@@ -75,7 +75,14 @@
 
 .banner {
   background: #F4F4F4;
+  background-image: url(../img/hands-taking-pizza.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
   color: #7B3000;
+}
+.banner__menu {
+  border-left: 25px solid #FF5B00;
+  background: rgba(244, 244, 244, 0.85);
 }
 .banner__title {
   color: #1E1E1E;
