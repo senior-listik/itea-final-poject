@@ -1,4 +1,4 @@
-.orderBlock__add div, .order__icon, .order__logBtn, .order__signBtn, .home__searchBtn, .header__nav ul, .header__container {
+.orderBlock__add div, .order__icon, .order__logBtn, .order__signBtn, .home__searchBtn, .header__icon, .header__nav ul, .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,6 +70,10 @@
 .header__navItem a {
   color: inherit;
 }
+.header__icon {
+  width: 40px;
+  height: 40px;
+}
 
 .icon-pizza {
   margin-right: 6px;
@@ -78,9 +82,10 @@
 .icon-burger {
   font-size: 40px;
   display: none;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+}
+
+.icon-close {
+  font-size: 25px;
 }
 
 .home {
@@ -894,15 +899,6 @@ input::-webkit-inner-spin-button {
 
 .hide {
   display: none;
-}
-
-.rotate {
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .visible {
