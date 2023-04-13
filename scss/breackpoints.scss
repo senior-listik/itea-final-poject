@@ -122,15 +122,21 @@
         max-width: 992px;
     }
     .header{
-        // position: fixed;
-        // z-index: 10;
-        // left: 0;
+        position: fixed;
+        z-index: 10;
+        left: 0;
         &__nav {
                 display: none;
             }
+        #toggle1{
+            display: flex;
+        }
     }
     .home{
         &__content{padding-top: 15%;}
+        &__toggle{
+            display: none;
+        }
     }
     
 

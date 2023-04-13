@@ -97,11 +97,23 @@
             color: inherit;
         }
     }
+    &__iconContainer{
+        display: flex;
+        gap: 20px;
+    }
     &__icon{
         @extend %flexcenter;
         width: 40px;
         height: 40px;
     }
+        #toggle1 {
+            @extend %flexcenter;
+            display: none;
+            width: 40px;
+            height: 40px;
+            font-size: 25px;
+            position:static;
+        }
 }
 
 .icon-pizza {
@@ -201,6 +213,7 @@
         bottom: 3.2%;
         cursor: pointer;
     }
+    
 }
 
 .icon-magnifier {margin-right: 13px;}

@@ -1,4 +1,4 @@
-.orderBlock__add div, .order__icon, .order__logBtn, .order__signBtn, .home__searchBtn, .header__icon, .header__nav ul, .header__container {
+.orderBlock__add div, .order__icon, .order__logBtn, .order__signBtn, .home__searchBtn, .header #toggle1, .header__icon, .header__nav ul, .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,9 +70,22 @@
 .header__navItem a {
   color: inherit;
 }
+.header__iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
 .header__icon {
   width: 40px;
   height: 40px;
+}
+.header #toggle1 {
+  display: none;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  position: static;
 }
 
 .icon-pizza {

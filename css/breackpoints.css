@@ -87,11 +87,24 @@
   .wrapper {
     max-width: 992px;
   }
+  .header {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+  }
   .header__nav {
     display: none;
   }
+  .header #toggle1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .home__content {
     padding-top: 15%;
+  }
+  .home__toggle {
+    display: none;
   }
   .icon-burger {
     display: block;
