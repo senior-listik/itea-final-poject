@@ -573,19 +573,19 @@
 
 .order {
   position: relative;
+  padding: 0 70px;
   font-family: "Quicksand";
   font-weight: 600;
   background: #151515;
+  background-image: url(../img/Pizza-slice.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
   color: #FFFFFF;
-}
-.order > img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 .order__header {
   background: rgba(255, 255, 255, 0.05);
-  padding: 43px 0 27px;
+  padding: 43px 1.9rem 27px;
+  width: 100%;
 }
 .order__headerContainer {
   max-width: 1720px;
@@ -618,6 +618,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -700,9 +701,9 @@
   line-height: 1.25;
 }
 .order__form {
-  width: 465px;
+  max-width: 465px;
+  width: 100%;
   z-index: 1;
-  margin-left: 20px;
   padding: 27px;
 }
 .order__formTitleBlock {

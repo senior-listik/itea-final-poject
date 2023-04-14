@@ -112,6 +112,16 @@
         
 }
 
+//1024
+@media(max-width: 1024px){
+    .order{
+        &__container{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 70px;
+        }
+    }
+}
 //992
 @media(max-width: 992px) {
     html {
@@ -128,15 +138,10 @@
         &__nav {
                 display: none;
             }
-        // #toggle1{
-        //     display: flex;
-        // }
+    
     }
     .home{
         &__content{padding-top: 15%;}
-        // &__toggle{
-        //     display: none;
-        // }
     }
     
 
@@ -204,6 +209,47 @@
         }
 
     }
+    .order{
+        padding: 0 1.9rem;
+        &__container{
+            gap: 0px;
+        }
+        &__form {
+            max-width: 100%;
+        }
+        &__account, &__address,
+            &__payment {
+        padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        &__btns{
+            width: 100%;
+            gap: 10px;
+            flex-direction: column;
+            button{
+                width: 100%;
+            }
+        }
+        &__icon {
+            
+            left: -15px;
+            top: -15px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 30px;
+    }
+        // &__address, &__payment {
+        //     padding: 25px;
+        //     margin-bottom: 20px;
+        // }
+    }
+        .icon-card {
+            font-size: 20px;
+        }
     
 }
 

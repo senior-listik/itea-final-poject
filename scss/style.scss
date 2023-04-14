@@ -556,18 +556,18 @@
 }
 .order {
     position: relative;
-    &>img{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
+    padding: 0 70px;
     font-family: 'Quicksand';
     font-weight: 600;
     background: $bg-night;
+    background-image: url(../img/Pizza-slice.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
     color: $third-txt;
     &__header {
         background: $header-transparency;
-        padding: 43px 0 27px;
+        padding: 43px 1.9rem 27px;
+        width: 100%;
     }
 
     &__headerContainer {
@@ -594,6 +594,7 @@
         max-width: 1626px;
         margin: 0 auto;
         display: flex;
+        gap: 30px;
         justify-content: space-between;
         padding: 86px 0;
     }
@@ -685,10 +686,12 @@
 }
 
     &__form {
-        width: 465px;
+        // flex: 0 0 465px;
+        max-width: 465px;
+        width: 100%;
         @extend %orderForm;
         z-index: 1;
-        margin-left: 20px;
+        // margin-left: 20px;
         padding: 27px;
 
     }

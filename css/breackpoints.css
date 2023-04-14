@@ -83,6 +83,16 @@
     margin: 0 auto 76px;
   }
 }
+@media (max-width: 1024px) {
+  .order__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 70px;
+  }
+}
 @media (max-width: 992px) {
   .wrapper {
     max-width: 992px;
@@ -173,6 +183,51 @@
   }
   .banner__btnContainer a {
     width: 100%;
+  }
+  .order {
+    padding: 0 1.9rem;
+  }
+  .order__container {
+    gap: 0px;
+  }
+  .order__form {
+    max-width: 100%;
+  }
+  .order__account, .order__address, .order__payment {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+  }
+  .order__btns {
+    width: 100%;
+    gap: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .order__btns button {
+    width: 100%;
+  }
+  .order__icon {
+    left: -15px;
+    top: -15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+  }
+  .icon-card {
+    font-size: 20px;
   }
 }
 @media (max-width: 320px) {
