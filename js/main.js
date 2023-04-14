@@ -14,6 +14,8 @@ function showMenu() {
 }
 function hideMenu() {
     headerNav.classList.remove('visible');
+    burgerIcon.classList.toggle('icon-close');
+    burgerIcon.classList.toggle('icon-burger');
     // burgerIcon.classList.toggle('rotate');
 }
 
