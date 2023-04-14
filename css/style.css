@@ -81,7 +81,6 @@
   height: 40px;
 }
 .header #toggle1 {
-  display: none;
   width: 40px;
   height: 40px;
   font-size: 25px;
@@ -911,7 +910,7 @@ input::-webkit-inner-spin-button {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .visible {

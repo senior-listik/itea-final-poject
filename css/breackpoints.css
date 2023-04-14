@@ -95,16 +95,8 @@
   .header__nav {
     display: none;
   }
-  .header #toggle1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .home__content {
     padding-top: 15%;
-  }
-  .home__toggle {
-    display: none;
   }
   .icon-burger {
     display: block;

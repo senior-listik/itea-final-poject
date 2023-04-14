@@ -108,7 +108,7 @@
     }
         #toggle1 {
             @extend %flexcenter;
-            display: none;
+            // display: none;
             width: 40px;
             height: 40px;
             font-size: 25px;
@@ -889,7 +889,7 @@ input::-webkit-inner-spin-button {
     /* <-- Apparently some margin are still there even though it's hidden */
 }
 .hide{
-    display: none;
+    display: none!important;
 }
 
 .visible {
