@@ -205,14 +205,26 @@
                 <div class="order__container">
                     <div class="order__content">
                         <div class="order__userInfo">
-                            <div class="order__account">
-                                <h2 class="order__accountTitle">Account</h2>
-                                <p class="order__accountText">To place your order now, log in to your existing account or sign up.</p>
-                                <div class="order__btns">
-                                    <button class="order__logBtn">Have an account ?<span>Log in</span></button>
-                                    <button class="order__signBtn">New to Mania ?<span>Sign in</span></button>
+                            
+                            <div class="order__account-accordeon">
+                                <div class="order__account">
+                                    <h2 class="order__accountTitle">Account</h2>
+                                    <p class="order__accountText">To place your order now, log in to your existing account or sign up.</p>
+                                    <div class="order__btns">
+                                        <button class="order__logBtn">Have an account ?<span>Log in</span></button>
+                                        <button class="order__signBtn">New to Mania ?<span>Sign in</span></button>
+                                    </div>
+                                    <div class="order__icon"><span class="icon-user"></span></div>
                                 </div>
-                                <div class="order__icon"><span class="icon-user"></span></div>
+                                <div class="order__account-login hidden">
+                                    <form action="" class="order__login-form">
+                                        <label for="login">
+                                            <input type="text" id="login" placeholder="Enter your password" required>
+                                        </label>
+                                        <button type="submit">Log In</button>
+                                    </form>
+                                </div>
+                                <div class="order__account-signin"></div>
                             </div>
                             <div class="order__address">
                                 <h3 class="order__addressTitle">Delivery address</h3>

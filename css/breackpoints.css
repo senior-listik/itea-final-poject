@@ -203,6 +203,15 @@
   .order__form {
     max-width: 100%;
   }
+  .order__account-accordeon {
+    margin-bottom: 20px;
+  }
+  .order__account-accordeon button {
+    width: 100%;
+  }
+  .order__account-accordeon label {
+    max-width: 100%;
+  }
   .order__account, .order__address, .order__payment {
     padding: 20px;
     display: -webkit-box;
@@ -215,7 +224,6 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 20px;
   }
   .order__accountText {
     text-align: center;

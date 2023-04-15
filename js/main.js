@@ -28,71 +28,19 @@ document.querySelector('main').addEventListener('click', function () {
 
 
 
-// // creating variables
-// const mobileToggle = document.getElementById('toggle1');
-// const linkTheme = document.querySelector('[title="theme"]');
-// const desktopToggle = document.getElementById('toggle2');
-// let themeUrl = "./css/day-theme.css"; //path to css file with light styles
+// hide accordion elements
+const loginAccordion = document.querySelector('.order__account-login');
+const accountLoginBtn = document.querySelector('.order__logBtn');
+const accountLoginInp = document.getElementById('login');
 
-// mobileToggle.addEventListener('click', toggleTheme);
-// desktopToggle.addEventListener('click', toggleTheme);
+accountLoginBtn.addEventListener('click', (event) => { event.stopPropagation() });
+accountLoginInp.addEventListener('click', (event) => { event.stopPropagation() });
+accountLoginBtn.addEventListener('click', function () {
+    loginAccordion.classList.toggle('hidden');
+});
 
-
-// // the function of switching styles by connecting a css file with light styles + switching icons
-// function toggleTheme() {
-
-//     if (mobileToggle) {
-//         mobileToggle.classList.toggle('icon-day');
-//         mobileToggle.classList.toggle('icon-night');
-    
-//         if (linkTheme.hasAttribute('href')) {
-//             linkTheme.removeAttribute('href');
-//             localStorage.removeItem('theme');
-//         } else {
-//             linkTheme.setAttribute('href', themeUrl);
-//             localStorage.setItem('theme', 'day'); //saving light theme to local storage
-//         }
-//     } else if (desktopToggle) {
-//         desktopToggle.classList.toggle('icon-day');
-//     desktopToggle.classList.toggle('icon-night');
-    
-//     if (linkTheme.hasAttribute('href')) {
-//         linkTheme.removeAttribute('href');
-//         localStorage.removeItem('theme');
-//     } else {
-//         linkTheme.setAttribute('href', themeUrl);
-//         localStorage.setItem('theme', 'day'); //saving light theme to local storage
-//     }
-//     }
-    
-// }
-
-// // checking if light theme exists in local storage and enable it
-// let activeTheme = localStorage.getItem('theme');
-
-// if (activeTheme === 'day') {
-//     linkTheme.setAttribute('href', themeUrl);
-//     localStorage.setItem('theme', 'day');
-//     mobileToggle.classList.toggle('icon-day');
-//     mobileToggle.classList.toggle('icon-night');
-//     desktopToggle.classList.toggle('icon-day');
-//     desktopToggle.classList.toggle('icon-night');
-// }
-
-
-
-
-
-// // the function of switching styles by connecting a css file with light styles + switching icons
-// function toggleTheme() {
-    
-    
-// }
-
-// // checking if light theme exists in local storage and enable it
-
-// if (activeTheme === 'day') {
-//     linkTheme.setAttribute('href', themeUrl);
-//     localStorage.setItem('theme', 'day');
-    
-// }
+document.querySelector('main').addEventListener('click', function () {
+    if (loginAccordion.classList.contains('hidden') === false) {
+        loginAccordion.classList.add('hidden');
+    }
+});

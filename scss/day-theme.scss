@@ -220,6 +220,23 @@ $active-btn: #b2b0ae;
         color: $icons-clr;
         @extend %flexcenter;
     }
+         &__account-accordeon {
+             border-bottom: 1px solid $main-txt;
+         }
+        &__account-login {
+            background: #d8d7d73b;
+            backdrop-filter: blur(1px);
+        }
+    
+        &__login-form {
+            button {
+                background: $main-txt;
+            }
+    
+            input {
+                border: 1px solid $main-txt;
+            }
+        }
 
     &__address {
         background: $bg-orderForm;
@@ -326,3 +343,4 @@ $active-btn: #b2b0ae;
         }
     }
 }
+
