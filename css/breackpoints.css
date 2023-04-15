@@ -217,6 +217,10 @@
             align-items: center;
     margin-bottom: 20px;
   }
+  .order__accountText {
+    text-align: center;
+    max-width: 200px;
+  }
   .order__btns {
     width: 100%;
     gap: 10px;
@@ -227,6 +231,13 @@
   }
   .order__btns button {
     width: 100%;
+    font-size: 1.25rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+    padding: 10px;
   }
   .order__icon {
     left: -15px;
