@@ -79,12 +79,26 @@
 .header__icon {
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+}
+.header__icon:active {
+  background: #373839;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 .header #toggle1 {
   width: 40px;
   height: 40px;
+  border-radius: 50%;
   font-size: 25px;
   position: static;
+}
+.header #toggle1:active {
+  background: #373839;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .icon-pizza {
@@ -988,4 +1002,10 @@ input::-webkit-inner-spin-button {
   background: #151515;
   padding: 15px 40px;
   border: 1px solid #FF8C42;
+}
+.visible .header__menu .header__navItem a:hover, .visible .header__menu .header__navItem a:active {
+  background: #373839;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }

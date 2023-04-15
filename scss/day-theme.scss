@@ -28,7 +28,7 @@ $oblique-line: #FF8C42;
 $icons-clr: #FF5B00;
 
 $add-btn: #D9D9D9;
-
+$active-btn: #b2b0ae;
 
 %flexcenter {
     display: flex;
@@ -56,6 +56,13 @@ $add-btn: #D9D9D9;
             color: inherit;
         }
     }
+        &__icon, #toggle1{
+            &:active {
+                    background: $active-btn;
+                    transition: 0.1s;
+                }
+        }
+     
 }
 
 .home {
@@ -179,7 +186,7 @@ $add-btn: #D9D9D9;
 
 .order {
     background: $bg-night;
-background-image: url(../img/Pizza-slice.png);
+    background-image: url(../img/Pizza-slice.png);
     background-position: right bottom;
     background-repeat: no-repeat;
     color: $third-txt;
@@ -311,6 +318,10 @@ background-image: url(../img/Pizza-slice.png);
             & a {
                 background: $bg-night;
                 border: 1px solid $main-txt;
+                &:hover, &:active {
+                        background: $active-btn;
+                        transition: 0.3s;
+                    }
                 }
         }
     }

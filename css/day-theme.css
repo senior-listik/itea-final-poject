@@ -30,6 +30,12 @@
 .header__navItem a {
   color: inherit;
 }
+.header__icon:active, .header #toggle1:active {
+  background: #b2b0ae;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
 
 .home {
   background: #F4F4F4;
@@ -213,4 +219,10 @@
 .visible .header__menu .header__navItem a {
   background: #F4F4F4;
   border: 1px solid #FF5B00;
+}
+.visible .header__menu .header__navItem a:hover, .visible .header__menu .header__navItem a:active {
+  background: #b2b0ae;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }

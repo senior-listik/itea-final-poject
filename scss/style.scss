@@ -29,6 +29,8 @@
 
     $add-btn: #D9D9D9;
 
+    $active-btn: #373839;
+
 %flexcenter {
     display: flex;
     align-items: center;
@@ -105,14 +107,23 @@
         @extend %flexcenter;
         width: 40px;
         height: 40px;
+        border-radius: 50%;
+        &:active {
+                background: $active-btn;
+                transition: 0.1s;
+            }
     }
         #toggle1 {
             @extend %flexcenter;
-            // display: none;
             width: 40px;
             height: 40px;
+            border-radius: 50%;
             font-size: 25px;
             position:static;
+            &:active {
+                    background: $active-btn;
+                    transition: 0.1s;
+                }
         }
 }
 
@@ -953,6 +964,10 @@ input::-webkit-inner-spin-button {
                 background: $bg-night;
                     padding: 15px 40px;
                     border: 1px solid $main-txt;
+                    &:hover, &:active  {
+                            background: $active-btn;
+                            transition: 0.3s;
+                        }
             }
         }
     }
