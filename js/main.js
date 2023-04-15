@@ -73,3 +73,12 @@ function showHideSignInForm() {
         SignInAccordion.classList.add('hidden');
     }
 };
+
+// Accordion
+const accordionTitle = document.querySelectorAll('.accordion__item');
+
+accordionTitle.forEach((el) => { el.addEventListener('click', showForm)});
+function showForm(){
+    this.nextElementSibling.classList.toggle('hidden');
+    this.lastElementChild.classList.toggle('rotate');
+}

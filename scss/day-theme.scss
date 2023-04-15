@@ -225,20 +225,12 @@ $active-btn: #b2b0ae;
             background: #d8d7d73b;
             backdrop-filter: blur(1px);
          }
-        &__login-form {
+        &__login-form, &__signin-form, &__payment-form, &__address-form {
             button {
                 background: $main-txt;
             }
     
             input {
-                border: 1px solid $main-txt;
-            }
-        }
-        &__signin-form{
-            button{
-                background: $main-txt;
-            }
-            input{
                 border: 1px solid $main-txt;
             }
         }
@@ -349,3 +341,6 @@ $active-btn: #b2b0ae;
     }
 }
 
+.arrow {
+    border-top: 12px solid $third-txt;
+ }

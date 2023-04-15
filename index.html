@@ -31,7 +31,7 @@
             </div>
         </header>
         <main>
-             <section class="home" id="home">
+            <section class="home" id="home">
                 <div class="home__toggle icon-day" id="toggle2"></div>
                 <script src="./js/theme-toggle.js"></script>
                 <div class="home__container">
@@ -191,7 +191,7 @@
                         <button class="form__btn" type="submit">Send mail</button>
                     </form>
                 </div>
-            </section> 
+            </section>
             <section class="order" id="order-section">
                 <div class="order__header">
                     <div class="order__headerContainer">
@@ -205,7 +205,6 @@
                 <div class="order__container">
                     <div class="order__content">
                         <div class="order__userInfo">
-                            
                             <div class="order__account-accordion">
                                 <div class="order__account">
                                     <h2 class="order__accountTitle">Account</h2>
@@ -239,13 +238,35 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="order__address">
-                                <h3 class="order__addressTitle">Delivery address</h3>
-                                <div class="order__icon"><span class="icon-marker"></span></div>
+                            <div class="order__address-accordion">
+                                <div class="order__address accordion__item">
+                                    <h3 class="order__addressTitle">Delivery address</h3>
+                                    <div class="order__icon"><span class="icon-marker"></span></div>
+                                    <span class="arrow"></span>
+                                </div>
+                                <div class="order__address-container hidden">
+                                    <form action="" class="order__address-form">
+                                        <label for="address">
+                                            <input type="text" id="address" placeholder="Enter order address" required>
+                                        </label>
+                                        <button type="submit">Enter</button>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="order__payment">
-                                <h3 class="order__paymentTitle">Payment</h3>
-                                <div class="order__icon"><span class="icon-card"></span></div>
+                            <div class="order__payment-accordion">
+                                <div class="order__payment accordion__item">
+                                    <h3 class="order__paymentTitle">Payment</h3>
+                                    <div class="order__icon"><span class="icon-card"></span></div>
+                                    <span class="arrow"></span>
+                                </div>
+                                <div class="order__payment-container hidden">
+                                    <form action="" class="order__payment-form">
+                                        <label for="payment">
+                                            <input type="text" id="payment" placeholder="Enter order address" required>
+                                        </label>
+                                        <button type="submit">Pay</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                         <div class="order__form">
