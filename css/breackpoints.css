@@ -203,13 +203,13 @@
   .order__form {
     max-width: 100%;
   }
-  .order__account-accordeon {
+  .order__account-accordion {
     margin-bottom: 20px;
   }
-  .order__account-accordeon button {
+  .order__account-accordion button {
     width: 100%;
   }
-  .order__account-accordeon label {
+  .order__account-accordion label {
     max-width: 100%;
   }
   .order__account, .order__address, .order__payment {

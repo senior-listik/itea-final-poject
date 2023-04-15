@@ -221,15 +221,16 @@
         &__form {
             max-width: 100%;
         }
-                &__account-accordeon {
-                    margin-bottom: 20px;
-                    button{
-                        width: 100%;
-                    }
-                    label{
-                        max-width: 100%;
-                    }
-                }
+        &__account-accordion {
+            margin-bottom: 20px;
+            button{
+                width: 100%;
+            }
+            label{
+                max-width: 100%;
+            }
+        }
+
         &__account, &__address,
             &__payment {
         padding: 20px;

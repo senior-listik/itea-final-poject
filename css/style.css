@@ -1,4 +1,4 @@
-.orderBlock__add div, .order__icon, .order__login-form button, .order__logBtn, .order__signBtn, .home__searchBtn, .header #toggle1, .header__icon, .header__nav ul, .header__container {
+.orderBlock__add div, .order__icon, .order__signin-form button, .order__login-form button, .order__logBtn, .order__signBtn, .home__searchBtn, .header #toggle1, .header__icon, .header__nav ul, .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,7 +651,7 @@
       -ms-flex: 0 1 990px;
           flex: 0 1 990px;
 }
-.order__account-accordeon {
+.order__account-accordion {
   margin-bottom: 90px;
   border-bottom: 1px solid #FF8C42;
   border-radius: 5px;
@@ -693,7 +693,7 @@
   text-decoration-line: underline;
   color: #FF8C42;
 }
-.order__account-login {
+.order__account-login, .order__account-signin {
   padding: 20px;
   width: 100%;
   height: 100;
@@ -702,8 +702,6 @@
   transition: all 0.3s;
 }
 .order__login-form {
-  -o-object-fit: cover;
-     object-fit: cover;
   width: 100%;
   height: 100%;
   font-size: 1.75rem;
@@ -733,7 +731,60 @@
 }
 .order__login-form input {
   width: 100%;
+  max-height: 39px;
+  background: transparent;
+  border: 1px solid #FF8C42;
+  border-radius: 5px;
+  padding: 10px;
+  color: inherit;
+  font-size: 1.25rem;
+}
+__ .order__account-signin {
+  height: 300px;
+}
+.order__signin-form {
+  margin: 0 auto;
+  max-width: 450px;
   height: 100%;
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.order__signin-form button {
+  height: 39px;
+  width: 100%;
+  background: #FF8C42;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: inherit;
+}
+.order__signin-form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.order__signin-form input {
+  width: 70%;
+  max-height: 39px;
   background: transparent;
   border: 1px solid #FF8C42;
   border-radius: 5px;

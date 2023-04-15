@@ -154,10 +154,8 @@
   background: #1E1E1E;
   color: #FF5B00;
 }
-.order__account-accordeon {
+.order__account-accordion {
   border-bottom: 1px solid #FF5B00;
-}
-.order__account-login {
   background: rgba(216, 215, 215, 0.231372549);
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
@@ -166,6 +164,12 @@
   background: #FF5B00;
 }
 .order__login-form input {
+  border: 1px solid #FF5B00;
+}
+.order__signin-form button {
+  background: #FF5B00;
+}
+.order__signin-form input {
   border: 1px solid #FF5B00;
 }
 .order__address {

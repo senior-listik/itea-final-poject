@@ -31,7 +31,7 @@
             </div>
         </header>
         <main>
-            <section class="home" id="home">
+             <section class="home" id="home">
                 <div class="home__toggle icon-day" id="toggle2"></div>
                 <script src="./js/theme-toggle.js"></script>
                 <div class="home__container">
@@ -191,7 +191,7 @@
                         <button class="form__btn" type="submit">Send mail</button>
                     </form>
                 </div>
-            </section>
+            </section> 
             <section class="order" id="order-section">
                 <div class="order__header">
                     <div class="order__headerContainer">
@@ -206,7 +206,7 @@
                     <div class="order__content">
                         <div class="order__userInfo">
                             
-                            <div class="order__account-accordeon">
+                            <div class="order__account-accordion">
                                 <div class="order__account">
                                     <h2 class="order__accountTitle">Account</h2>
                                     <p class="order__accountText">To place your order now, log in to your existing account or sign up.</p>
@@ -224,7 +224,20 @@
                                         <button type="submit">Log In</button>
                                     </form>
                                 </div>
-                                <div class="order__account-signin"></div>
+                                <div class="order__account-signin hidden">
+                                    <form action="" class="order__signin-form">
+                                        <label for="name">Name 
+                                            <input type="text" id="name" placeholder="Enter your name" required>
+                                        </label>
+                                        <label for="email">E-mail
+                                            <input type="email" id="email" placeholder="Enter your E-mail" required>
+                                        </label>
+                                        <label for="password">Password
+                                            <input type="password" id="signin" placeholder="Enter your password" required>
+                                        </label>
+                                        <button type="submit">Sign In</button>
+                                    </form>
+                                </div>
                             </div>
                             <div class="order__address">
                                 <h3 class="order__addressTitle">Delivery address</h3>

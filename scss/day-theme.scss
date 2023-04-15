@@ -220,20 +220,25 @@ $active-btn: #b2b0ae;
         color: $icons-clr;
         @extend %flexcenter;
     }
-         &__account-accordeon {
+         &__account-accordion {
              border-bottom: 1px solid $main-txt;
-         }
-        &__account-login {
             background: #d8d7d73b;
             backdrop-filter: blur(1px);
-        }
-    
+         }
         &__login-form {
             button {
                 background: $main-txt;
             }
     
             input {
+                border: 1px solid $main-txt;
+            }
+        }
+        &__signin-form{
+            button{
+                background: $main-txt;
+            }
+            input{
                 border: 1px solid $main-txt;
             }
         }
