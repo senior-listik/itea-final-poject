@@ -155,8 +155,8 @@
                         <li class="banner__item">Cheese Pizza</li>
                     </ul>
                     <div class="banner__btnContainer">
-                        <a href="">Order online now</a>
-                        <a href="">See our menu</a>
+                        <a href="#order-section">Order online now</a>
+                        <a href="#">See our menu</a>
                     </div>
                 </div>
                     
@@ -192,17 +192,18 @@
                     </form>
                 </div>
             </section>
-            <section class="order">
+            <section class="order" id="order-section">
                 <div class="order__header">
                     <div class="order__headerContainer">
                         <a href="#home" class="header__logo"><span class="icon-pizza"></span>Mania</a>
                         <div class="order__headerLinks">
-                            <a href="#"><span class="icon-question"></span>Help</a>
-                            <a href="#"><span class="icon-user-add"></span>Sign in</a>
+                            <a href="#" class="icon-question"><span>Help</span></a>
+                            <a href="#" class="icon-user-add"><span>Sign in</span></a>
                         </div>
                     </div>
                 </div>
-                    <div class="order__container">
+                <div class="order__container">
+                    <div class="order__content">
                         <div class="order__userInfo">
                             <div class="order__account">
                                 <h2 class="order__accountTitle">Account</h2>
@@ -224,7 +225,7 @@
                         </div>
                         <div class="order__form">
                             <div class="order__formTitleBlock">
-                                <img src="./img/pizza-small.png" alt="pizza">
+                                <img src="./img/pizza-small.png" width="119px" alt="pizza">
                                 <div>
                                     <h1 class="order__formTitle">Wow ! Pizza</h1>
                                     <p class="order__formSubtitle">delivered to this location</p>
@@ -253,15 +254,19 @@
                                 <ul class="bill__list">
                                     <li class="bill_title">Bill Details</li>
                                     <li class="bill__total">Item total <span class="bill__totalPrice">$180</span></li>
-                                    <li class="bill__delivery">Delivery partner<span class="bill__deliveryPrice">$19.00</span><span class="bill__deliveryFree">FREE</span></li>
+                                    <li class="bill__delivery">Delivery partner<span class="bill__deliveryPrice">$19.00</span><span
+                                            class="bill__deliveryFree">FREE</span></li>
                                     <li class="bill__discount">Item Discount<span class="bill__discountPrice">-$20</span></li>
                                     <li class="bill__tax">Taxes and Charges<span class="bill__taxPrice">$2.00</span></li>
                                     <li class="bill__toPay">To Pay<span class="bill__toPayPrice">$182</span></li>
                                 </ul>
                             </div>
+                            <div class="order__btnContainer">
+                                <button class="order__button">Order</button>
+                            </div>
                         </div>
                     </div>
-                    <!-- <img src="./img/Pizza-slice.png" alt="slice of pizza"> -->
+                </div>
             </section>
         </main>
     </div>

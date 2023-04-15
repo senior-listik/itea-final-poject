@@ -556,7 +556,6 @@
 }
 .order {
     position: relative;
-    padding: 0 70px;
     font-family: 'Quicksand';
     font-weight: 600;
     background: $bg-night;
@@ -564,6 +563,10 @@
     background-position: right bottom;
     background-repeat: no-repeat;
     color: $third-txt;
+    img{
+        width: 119px;
+        height: 119px;
+    }
     &__header {
         background: $header-transparency;
         padding: 43px 1.9rem 27px;
@@ -587,16 +590,20 @@
             color: #ffffff;
             font-size: 2.25rem;
             line-height: 1.25;
+            span{
+                margin-left: 10px;
+            }
         }
     }
-
-    &__container {
+    &__container{
+        padding: 86px 70px;
+    }
+    &__content {
         max-width: 1626px;
         margin: 0 auto;
         display: flex;
         gap: 30px;
         justify-content: space-between;
-        padding: 86px 0;
     }
 
     &__userInfo {
@@ -608,10 +615,9 @@
         @extend %orderForm;
         padding: 28px 50px;
         position: relative;
-        
+        cursor: pointer;
     }
     
-
     &__accountTitle {
         font-weight: 700;
         font-size: 3rem;
@@ -669,6 +675,7 @@
         max-width: 990px;
         padding: 28px 50px;
         @extend %orderForm;
+        cursor: pointer;
     }
 
     &__payment {
@@ -677,6 +684,7 @@
         max-width: 990px;
         padding: 28px 50px;
         @extend %orderForm;
+        cursor: pointer;
     }
 
     &__paymentTitle, &__addressTitle {
@@ -686,12 +694,10 @@
 }
 
     &__form {
-        // flex: 0 0 465px;
         max-width: 465px;
         width: 100%;
         @extend %orderForm;
         z-index: 1;
-        // margin-left: 20px;
         padding: 27px;
 
     }
@@ -705,14 +711,29 @@
     &__formTitle {
         margin: 16px 0 16px;
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 1.25;
     }
 
     &__formSubtitle {
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 1.5rem;
         line-height: 1.25;
+    }
+    &__btnContainer{
+        display: flex;
+        justify-content: center;
+    }
+    &__button{
+        background: $main-txt;
+        color: $white-color-txt;
+        border-radius: 5px;
+        width: 155px;
+        height: 42px;
+        display: block;
+        font-size: inherit;
+        line-height: inherit;
+        font-weight: 600;
     }
 }
 
@@ -723,9 +744,11 @@
     &__promocode {
         color: $main-txt;
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 1.5rem;
         line-height: 1.25;
         margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
         span{
             color: $third-txt;
         }
@@ -740,20 +763,20 @@
 
     &__name {
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 1.5rem;
         line-height: 1.25;
         color: $main-txt;
         text-align: right;
         div:last-child{
             font-weight: 600;
-            font-size: 0.7rem;
+            font-size: 1.25rem;
             line-height: 0.75;
             color: $third-txt;
         }
         span{
            color: $main-txt;
            margin-left: 5px;
-           font-size: 1rem;
+           font-size: 1.5rem;
         }
     }
 
@@ -762,7 +785,7 @@
         background: $add-btn;
         color: $add;
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 1.5rem;
         line-height: 1.25;
         border-radius: 5px;
         width: 97px;
@@ -778,7 +801,7 @@
     }
 
     &__cost {
-        font-size: 0.7rem;
+        font-size: 1.25rem;
         line-height: 0.75;
         color: $coast;
         div:first-child{
@@ -788,7 +811,7 @@
     }
 
     &__link {
-        font-size: 0.75rem;
+        font-size: 1.0rem;
         line-height: 1.25;
         color: $message-link;
         text-decoration: underline;
@@ -804,7 +827,8 @@
     }
 
     &__list {
-        width: 230px;
+        max-width: 300px;
+        width: 100%;
         font-weight: 500;
         font-size: 0.75rem;
         line-height: 1.25;
@@ -861,20 +885,24 @@
     }
 
     &__toPay {
-        margin: 24px 0 120px;
+        margin: 24px 0 70px;
         display: flex;
         justify-content: space-between;
+        color: #000000;
+        font-size: 1.5rem;
+        font-weight: 700;
     }
 
     &__toPayPrice {
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 700;
+        color: #000000;
     }
 }
 
 .icon-pizza {}
 
-.icon-question, .icon-user-add {margin-right: 10px;}
+// .icon-question, .icon-user-add {padding-left: 10px;}
 
 .icon-user-add {}
 

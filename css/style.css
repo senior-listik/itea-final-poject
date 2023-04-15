@@ -573,7 +573,6 @@
 
 .order {
   position: relative;
-  padding: 0 70px;
   font-family: "Quicksand";
   font-weight: 600;
   background: #151515;
@@ -581,6 +580,10 @@
   background-position: right bottom;
   background-repeat: no-repeat;
   color: #FFFFFF;
+}
+.order img {
+  width: 119px;
+  height: 119px;
 }
 .order__header {
   background: rgba(255, 255, 255, 0.05);
@@ -612,7 +615,13 @@
   font-size: 2.25rem;
   line-height: 1.25;
 }
+.order__headerLinks a span {
+  margin-left: 10px;
+}
 .order__container {
+  padding: 86px 70px;
+}
+.order__content {
   max-width: 1626px;
   margin: 0 auto;
   display: -webkit-box;
@@ -622,7 +631,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 86px 0;
 }
 .order__userInfo {
   -webkit-box-flex: 0;
@@ -633,6 +641,7 @@
   margin-bottom: 90px;
   padding: 28px 50px;
   position: relative;
+  cursor: pointer;
 }
 .order__accountTitle {
   font-weight: 700;
@@ -688,12 +697,14 @@
   margin-bottom: 90px;
   max-width: 990px;
   padding: 28px 50px;
+  cursor: pointer;
 }
 .order__payment {
   position: relative;
   background: rgba(255, 255, 255, 0.2);
   max-width: 990px;
   padding: 28px 50px;
+  cursor: pointer;
 }
 .order__paymentTitle, .order__addressTitle {
   font-weight: 700;
@@ -716,13 +727,32 @@
 .order__formTitle {
   margin: 16px 0 16px;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1.25;
 }
 .order__formSubtitle {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.25;
+}
+.order__btnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.order__button {
+  background: #FF8C42;
+  color: #FFFFFF;
+  border-radius: 5px;
+  width: 155px;
+  height: 42px;
+  display: block;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 600;
 }
 
 .orderBlock {
@@ -733,9 +763,14 @@
 .orderBlock__promocode {
   color: #FF8C42;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.25;
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .orderBlock__promocode span {
   color: #FFFFFF;
@@ -752,21 +787,21 @@
 }
 .orderBlock__name {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.25;
   color: #FF8C42;
   text-align: right;
 }
 .orderBlock__name div:last-child {
   font-weight: 600;
-  font-size: 0.7rem;
+  font-size: 1.25rem;
   line-height: 0.75;
   color: #FFFFFF;
 }
 .orderBlock__name span {
   color: #FF8C42;
   margin-left: 5px;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .orderBlock__add {
   display: -webkit-box;
@@ -775,7 +810,7 @@
   background: #D9D9D9;
   color: #019310;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.25;
   border-radius: 5px;
   width: 97px;
@@ -791,7 +826,7 @@
   cursor: auto;
 }
 .orderBlock__cost {
-  font-size: 0.7rem;
+  font-size: 1.25rem;
   line-height: 0.75;
   color: #FF4141;
 }
@@ -800,7 +835,7 @@
   margin-bottom: 10px;
 }
 .orderBlock__link {
-  font-size: 0.75rem;
+  font-size: 1rem;
   line-height: 1.25;
   color: #F461A8;
   text-decoration: underline;
@@ -813,7 +848,8 @@
   margin-bottom: 35px;
 }
 .bill__list {
-  width: 230px;
+  max-width: 300px;
+  width: 100%;
   font-weight: 500;
   font-size: 0.75rem;
   line-height: 1.25;
@@ -877,21 +913,21 @@
   color: #000000;
 }
 .bill__toPay {
-  margin: 24px 0 120px;
+  margin: 24px 0 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.bill__toPayPrice {
-  font-size: 1rem;
+  color: #000000;
+  font-size: 1.5rem;
   font-weight: 700;
 }
-
-.icon-question, .icon-user-add {
-  margin-right: 10px;
+.bill__toPayPrice {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000;
 }
 
 .icon-marker {

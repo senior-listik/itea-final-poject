@@ -84,7 +84,7 @@
   }
 }
 @media (max-width: 1024px) {
-  .order__container {
+  .order__content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -184,10 +184,18 @@
   .banner__btnContainer a {
     width: 100%;
   }
-  .order {
-    padding: 0 1.9rem;
+  .order__headerLinks {
+    margin-right: 0;
+    gap: 30px;
+    font-size: 2.5rem;
+  }
+  .order__headerLinks span {
+    display: none;
   }
   .order__container {
+    padding: 30px 1.9rem;
+  }
+  .order__content {
     gap: 0px;
   }
   .order__form {
@@ -226,8 +234,26 @@
     border-radius: 50%;
     font-size: 30px;
   }
+  .order__button {
+    width: 100%;
+  }
   .icon-card {
     font-size: 20px;
+  }
+  .bill_title {
+    font-size: 2rem;
+  }
+  .bill__list {
+    font-size: 1.5rem;
+  }
+  .bill__deliveryPrice {
+    font-size: 1.5rem;
+  }
+  .bill__toPay {
+    font-size: 2.5rem;
+  }
+  .bill__toPayPrice {
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 320px) {

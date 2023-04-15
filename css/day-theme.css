@@ -126,6 +126,9 @@
 
 .order {
   background: #F4F4F4;
+  background-image: url(../img/Pizza-slice.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
   color: #1E1E1E;
 }
 .order__header {
@@ -151,6 +154,11 @@
 .order__payment {
   background: rgba(217, 217, 217, 0.59);
 }
+.order__button {
+  background: #FF5B00;
+  color: #FFFFFF;
+}
+
 .orderBlock {
   border-left: 3px solid #FF5B00;
 }
