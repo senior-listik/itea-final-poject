@@ -30,7 +30,9 @@
     $add-btn: #D9D9D9;
 
     $active-btn: #373839;
-
+:root{
+    scroll-behavior: smooth;
+}
 %flexcenter {
     display: flex;
     align-items: center;

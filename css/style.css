@@ -1,3 +1,7 @@
+:root {
+  scroll-behavior: smooth;
+}
+
 .orderBlock__add div, .order__address-form button, .order__payment-form button, .order__icon, .order__signin-form button, .order__login-form button, .order__logBtn, .order__signBtn, .home__searchBtn, .header #toggle1, .header__icon, .header__nav ul, .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
