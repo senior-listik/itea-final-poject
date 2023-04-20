@@ -82,3 +82,69 @@ function showForm(){
     this.nextElementSibling.classList.toggle('hidden');
     this.lastElementChild.classList.toggle('rotate');
 }
+
+// select type of pizza
+const select = document.querySelector('#customize');
+const nameOfPizza = document.querySelector('.name-pizza');
+const option = document.querySelectorAll('#customize option');
+const numberOfPizza = document.getElementById('number-pizza');
+const addNumber = document.getElementById('add-number');
+const subrtactNumber = document.getElementById('sub-number');
+const sumCost = document.getElementById('sum');
+const discountPrice = document.getElementById('discount-price');
+let counter = 1;
+let optionText;
+let pizzaCost;
+let sum;
+
+
+
+
+localStorage.setItem('Picantina', 4.8);
+localStorage.setItem('Margarita', 4.5);
+localStorage.setItem('Hawaiian', 5.0);
+localStorage.setItem('Veggie', 4.3);
+localStorage.setItem('Cheese Pizza', 3.5);
+localStorage.setItem('Meat Pizza', 5.2);
+
+// when changing the type of pizza, we write its name in the title, and leave the select value the same
+select.addEventListener('change', function () {
+    optionText = option[select.value].text;
+    
+    for (let i = 0; i < optionText.length; ++i){
+ 
+        if (optionText[i] == ' ' ) {
+           nameOfPizza.innerHTML = optionText.slice(0, -(optionText.length - i));
+        }
+
+}
+    select.value = 0;
+    pizzaCost = Number(localStorage.getItem(nameOfPizza.outerText));
+    
+});
+
+addNumber.addEventListener('click', function () {
+    if (counter >= 1 && counter < 7) {
+        counter += 1;
+    numberOfPizza.innerText = counter;
+    }
+    
+});
+subrtactNumber.addEventListener('click', function () {
+    if (counter > 1) {
+       counter -= 1;
+    numberOfPizza.innerText = counter; 
+    }
+    
+});
+select.addEventListener('change', calcSum);
+subrtactNumber.addEventListener('click', calcSum);
+addNumber.addEventListener('click', calcSum);
+
+function calcSum() {
+    if (pizzaCost !== undefined) {
+        sum = (pizzaCost * counter).toFixed(1);
+        sumCost.innerText = sum + '$';
+        discountPrice.innerText = (sum * 0.8).toFixed(1) + '$';
+    }
+};

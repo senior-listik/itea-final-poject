@@ -906,7 +906,7 @@ __
         font-size: 1.5rem;
         line-height: 1.25;
         color: $main-txt;
-        text-align: right;
+        // text-align: right;
         div:last-child{
             font-weight: 600;
             font-size: 1.25rem;
@@ -1117,4 +1117,27 @@ input::-webkit-inner-spin-button {
 .rotate{
     transform: rotate(180deg);
     transition: 0.3s;
+}
+.customize{
+text-align: left;
+width: 100%;
+&__arrow{
+    position: absolute; 
+    right: 0;
+}
+}
+#customize{
+width: 100%;
+background: transparent;
+color: inherit;
+font-size: inherit;
+font-weight: inherit;
+position: relative;
+& option{
+    background: $bg-night;
+    color: $third-txt;
+    font-size: 1rem;
+    width: 100%;
+}
+
 }

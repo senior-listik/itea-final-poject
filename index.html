@@ -31,7 +31,7 @@
             </div>
         </header>
         <main>
-            <section class="home" id="home">
+            <!-- <section class="home" id="home">
                 <div class="home__toggle icon-day" id="toggle2"></div>
                 <script src="./js/theme-toggle.js"></script>
                 <div class="home__container">
@@ -191,7 +191,7 @@
                         <button class="form__btn" type="submit">Send mail</button>
                     </form>
                 </div>
-            </section>
+            </section> -->
             <section class="order" id="order-section">
                 <div class="order__header">
                     <div class="order__headerContainer">
@@ -281,18 +281,21 @@
                                 <div class="orderBlock__promocode">Apply your coupon code <span># xxxx xxxx</span></div>
                                 <div class="orderBlock__choice">
                                     <div class="orderBlock__name">
-                                        <!-- <div>Cheese Pizza </div>
-                                        <div>Customize<span>></span></div> -->
-                                        <select name="" id="">
-                                            <option value="">Choose a pizzan</option>
-                                            <option value="1">Your pizza</option>
-                                            <option value="2">Margarita Pizza</option>
-                                            <option value="3">Hawaiian Pizza</option>
-                                            <option value="4">Veggie Pizza</option>
-                                            <option value="5">Cheese Pizza</option>
-                                            <option value="6">Meat Pizza</option>
-                                        </select>
-                                        <select name="" id="">
+                                        <div class="name-pizza">Сhoose a pizza</div>
+                                        <div class="customize">
+                                            <select name="" id="customize">
+                                                <option value="0">Customize</option>
+                                                <option value="1">Picantina  <span>4.8</span>$</option>
+                                                <option value="2">Margarita  <span>4.5</span>$</option>
+                                                <option value="3">Hawaiian  <span>5.0</span>$</option>
+                                                <option value="4">Veggie  <span>4.3</span>$</option>
+                                                <option value="5">Cheese Pizza  <span>3.5</span>$</option>
+                                                <option value="6">Meat Pizza  <span>5.2</span>$</option>
+                                                <!-- <span class="customize__arrow">></span> -->
+                                            </select>
+                                        </div>
+                                        
+                                        <!-- <select name="" id="">
                                             <option value="">Ingredients</option>
                                             <option value="1">Cheese</option>
                                             <option value="2">Salmon</option>
@@ -302,16 +305,16 @@
                                             <option value="6">Tomatoes</option>
                                             <option value="7">Olives</option>
                                             <option value="8">Greenery</option>
-                                        </select>
+                                        </select> -->
                                     </div>
                                     <div class="orderBlock__add">
-                                        <div>-</div>
-                                        <div>1</div>
-                                        <div>+</div>
+                                        <div id="sub-number">-</div>
+                                        <div id="number-pizza">1</div>
+                                        <div id="add-number">+</div>
                                     </div>
                                     <div class="orderBlock__cost">
-                                        <div>200$</div>
-                                        <div>180$</div>
+                                        <div id="sum"></div>
+                                        <div id="discount-price"></div>
                                     </div>
                                 </div>
                                 <a href="#" class="orderBlock__link">" Any message to your Loving one ? "</a>
