@@ -148,6 +148,7 @@ select.addEventListener('change', calcSum);
 subrtactNumber.addEventListener('click', calcSum);
 addNumber.addEventListener('click', calcSum);
 
+// order cost calculation and bill generation
 function calcSum() {
     if (pizzaCost !== undefined) {
         sum = (pizzaCost * counter).toFixed(1);
