@@ -14,7 +14,7 @@
     Пошта: $email /n
     Кількість людей: $number /n
     Дата і час: $text"; 	
-	mail($to, $subject, $msg, "From: $to ");
+	mail($to, $subject, $msg, "From: $from ");
 
 ?>
 
