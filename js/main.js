@@ -83,7 +83,7 @@ function showForm(){
     this.lastElementChild.classList.toggle('rotate');
 }
 
-// select type of pizza
+// choice of pizza type and quantity + cost calculation
 const select = document.querySelector('#customize');
 const nameOfPizza = document.querySelector('.name-pizza');
 const option = document.querySelectorAll('#customize option');
@@ -92,14 +92,21 @@ const addNumber = document.getElementById('add-number');
 const subrtactNumber = document.getElementById('sub-number');
 const sumCost = document.getElementById('sum');
 const discountPrice = document.getElementById('discount-price');
+const billTotalPrice = document.querySelector('.bill__totalPrice');
+const billToPay = document.querySelector('.bill__toPayPrice');
+const billTax = document.querySelector('.bill__taxPrice');
+const billDiscount = document.querySelector('.bill__discountPrice');
+
 let counter = 1;
 let optionText;
 let pizzaCost;
 let sum;
+let discount = 0.2;
+const tax = 0.2
 
 
 
-
+// put data about pizzas in local storage
 localStorage.setItem('Picantina', 4.8);
 localStorage.setItem('Margarita', 4.5);
 localStorage.setItem('Hawaiian', 5.0);
@@ -145,6 +152,13 @@ function calcSum() {
     if (pizzaCost !== undefined) {
         sum = (pizzaCost * counter).toFixed(1);
         sumCost.innerText = sum + '$';
-        discountPrice.innerText = (sum * 0.8).toFixed(1) + '$';
+        billDiscount.innerText = '- %' + discount * 100;
+        billTax.innerText = '%' + tax * 100;
+        discountPrice.innerText = (sum - (sum * discount)).toFixed(1) + '$';
+        billTotalPrice.innerText = '$' + (sum - (sum * discount)).toFixed(1) ;
+        billToPay.innerText = '$' + ((sum - (sum * discount)) + (sum * tax)).toFixed(1);
     }
 };
+
+
+
