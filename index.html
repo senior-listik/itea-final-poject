@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name=”viewport” content=”width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" title="theme">
     <link rel="stylesheet" href="./css/breackpoints.css">
@@ -170,7 +169,7 @@
                 <img src="./img/Gobi.png" alt="lettuce leaf" class="reservation__img">
                 <div class="reservation__container">
                     <div class="reservation__text">*terms & conditions applied.</div>
-                    <form class="reservation__form" action="sender.php">
+                    <form action="sender.php" class="reservation__form" >
                         <h2 class="form__title">Reservation</h2>
                         <p class="form__text">
                             Book online or give us a call on
@@ -179,16 +178,16 @@
                         <p class="form__text">Between 9:30 am - 10:00 pm</p>
                         <div class="form__container">
                             <label for="name">
-                                <div>Name</div> <input type="text" name="name">
+                                <div>Name</div> <input type="text" name="name" required>
                             </label>
                             <label for="email">
-                                <div>E-mail</div> <input type="email" name="email">
+                                <div>E-mail</div> <input type="email" name="email" required>
                             </label>
                             <label for="number">
-                                <div>People number</div> <input type="number" name="number">
+                                <div>People number</div> <input type="number" name="number" required>
                             </label>
                             <label for="text">
-                               <div>Date & time</div> <input type="text" name="text">
+                               <div>Date & time</div> <input type="text" name="text" required>
                             </label>
                         </div>
                         <button class="form__btn" type="button">Send mail</button>

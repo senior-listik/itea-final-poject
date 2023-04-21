@@ -7,7 +7,7 @@
     	let form = jQuery(this)
     	
     	if ( form.valid() ) {
-    		
+    		form.css('opacity','.5');
     		let actUrl = form.attr('action');
 
     		jQuery.ajax({
@@ -15,11 +15,11 @@
     			type: 'post',
     			dataType: 'html',
     			data: form.serialize(),
-    			success: function() {
-                    alert('Successfully sent!');
+    			success: function(data) {
+                    alert('hello');
     			},
     			error:function() {
-    			     alert('E R R O R');
+    			     form.find('.status').html('серверная ошибка');
     			}
     		});
     	}
