@@ -37,8 +37,9 @@
 
 .header {
   position: sticky;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
+  top: 0;
   background: #151515;
   padding: 2.2% 1.6%;
   color: #FF8C42;
@@ -120,6 +121,30 @@
   display: none;
 }
 
+.modal {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background: rgba(21, 21, 21, 0.85);
+  padding: 1.9rem;
+}
+.modal__body {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  max-width: 500px;
+  width: 100%;
+  height: 500px;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #151515;
+  border: 1px solid #FF8C42;
+  color: #FF8C42;
+}
 .home {
   position: relative;
   background: #151515;
