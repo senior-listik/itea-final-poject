@@ -113,6 +113,11 @@
     display: -ms-flexbox;
     display: flex;
   }
+  .icon-close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .banner__title {
     top: 60px;
     left: 0;

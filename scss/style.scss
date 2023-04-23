@@ -59,15 +59,13 @@
 }
 
 .header {
-    // position: fixed;
-    // z-index: 10;
-    // left: 0;
+    position: sticky;
+    z-index: 10;
     width: 100%;
     background: $bg-night;
     padding: 2.2% 1.6%;
     color: $main-txt;
     font-family: 'Quicksand';
-    position: relative;
 
     &__container{
         max-width: 1726px;
@@ -138,6 +136,7 @@
 }
 .icon-close{
     font-size: 25px;
+    display: none;
 }
 .home {
     position: relative;
