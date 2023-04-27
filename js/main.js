@@ -161,5 +161,55 @@ function calcSum() {
     }
 };
 
+// open the modal coupon by clicking the link in the navigation menu
+const couponLink = document.getElementById('coupon');
+const couponModal = document.querySelector('.modal');
+const modalBody = document.querySelector('.modal__body');
+const modalCloseBtn = document.querySelector('#close_modal_btn');
+// const applyPromocodeBtn = document.querySelector('.modal__applyPromoBtn');
 
+couponLink.addEventListener('click', toggleModalVisible);
 
+modalCloseBtn.addEventListener('click', toggleModalVisible);
+couponModal.addEventListener('click', toggleModalVisible);
+modalBody.addEventListener('click', (event)=>{event.stopPropagation()})
+
+function toggleModalVisible(event) {
+
+    event.preventDefault();
+    couponModal.classList.toggle('hide');
+}
+
+// when click on the get promo code button, we generate a new promo code
+const getPromocodeBtn = document.querySelector('.modal__getPromoBtn');
+const applyPromocodeBtn = document.querySelector('.modal__applyPromoBtn');
+const promocodeInfo = document.querySelector('.modal__promocode');
+const appliedPromocode = document.getElementById('promocode');
+let promocode;
+
+getPromocodeBtn.addEventListener('click', generatePromoCode);
+
+// when clicking on apply, transfer the promo code to the order, 
+// change the apply button to get promo code and close the modal window
+
+applyPromocodeBtn.addEventListener('click', applyPromoCode);
+applyPromocodeBtn.addEventListener('click', toggleModalVisible);
+
+function generatePromoCode() {
+    applyPromocodeBtn.classList.remove('hide');
+    getPromocodeBtn.classList.add('hide');
+
+    promocode = ''
+    for (i = 0; i < 8; i++){
+        promocode += Math.round(Math.random() * 10);
+    }
+    promocodeInfo.innerText = promocode;
+
+}
+function applyPromoCode() {
+    appliedPromocode.innerText = '#' + promocode;
+    promocodeInfo.innerText = '';
+    applyPromocodeBtn.classList.add('hide');
+    getPromocodeBtn.classList.remove('hide');
+    
+}

@@ -135,16 +135,17 @@
         &__nav {
                 display: none;
             }
-    
+        .icon-close {
+            display: flex;
+        }
     }
     .home{
         &__content{padding-top: 15%;}
     }
     
-
+    
     .icon-burger {display: flex;}
-    .icon-close {display: flex;}
-
+    
     .banner {
         &__title {
             top: 60px;

@@ -2,7 +2,7 @@
   scroll-behavior: smooth;
 }
 
-.orderBlock__add div, .order__address-form button, .order__payment-form button, .order__icon, .order__signin-form button, .order__login-form button, .order__logBtn, .order__signBtn, .home__searchBtn, .header #toggle1, .header__icon, .header__nav ul, .header__container {
+.orderBlock__add div, .order__address-form button, .order__payment-form button, .order__icon, .order__signin-form button, .order__login-form button, .order__logBtn, .order__signBtn, .home__searchBtn, .modal__bannerText, .header #toggle1, .header__icon, .header__nav ul, .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,7 +37,7 @@
 
 .header {
   position: sticky;
-  z-index: 100;
+  z-index: 50;
   width: 100%;
   top: 0;
   background: #151515;
@@ -82,6 +82,10 @@
   display: flex;
   gap: 20px;
 }
+.header__iconContainer .icon-close {
+  font-size: 25px;
+  display: none;
+}
 .header__icon {
   width: 40px;
   height: 40px;
@@ -121,19 +125,25 @@
   display: none;
 }
 
+main {
+  position: relative;
+}
+
 .modal {
   position: absolute;
-  top: 100px;
+  position: fixed;
+  top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 60;
   width: 100%;
   height: 100vh;
   background: rgba(21, 21, 21, 0.85);
   padding: 1.9rem;
+  font-family: "Quicksand";
 }
 .modal__body {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   max-width: 500px;
   width: 100%;
@@ -144,7 +154,73 @@
   background: #151515;
   border: 1px solid #FF8C42;
   color: #FF8C42;
+  padding: 20px;
 }
+.modal .icon-close {
+  display: block;
+}
+.modal__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.modal__title {
+  font-family: "Kaushan Script";
+  font-weight: 700;
+  font-size: 5rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+.modal__banner {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 10px solid #FF8C42;
+  overflow: hidden;
+  background: url(../img/hands-taking-pizza.png) center no-repeat;
+}
+.modal__promocode {
+  display: block;
+  min-height: 35px;
+  text-align: center;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+.modal__bannerText {
+  height: 100%;
+  width: 100%;
+  font-family: "Kaushan Script";
+  font-weight: 700;
+  font-size: 5rem;
+  background: rgba(21, 21, 21, 0.85);
+}
+.modal #close_modal_btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.modal__btn {
+  background: #FF8C42;
+  border-radius: 5px;
+  color: #FFFFFF;
+  padding: 10px 49px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
 .home {
   position: relative;
   background: #151515;

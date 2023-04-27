@@ -60,7 +60,7 @@
 
 .header {
     position: sticky;
-    z-index: 100;
+    z-index: 50;
     width: 100%;
     top:0;
     background: $bg-night;
@@ -103,6 +103,10 @@
     &__iconContainer{
         display: flex;
         gap: 20px;
+        & .icon-close {
+                font-size: 25px;
+                display: none;
+            }
     }
     &__icon{
         @extend %flexcenter;
@@ -140,19 +144,26 @@
     display: none;
 }
 
+main{
+    position: relative;
+
+}
+
 .modal {
     position: absolute;
-    top: 100px;
+    position: fixed;
+    top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 60;
     width: 100%;
     height: 100vh;
     background: $bg-main-transp;
     padding: 1.9rem;
+    font-family: 'Quicksand';
     
 		&__body {
             position: absolute;
-            top: 40%;
+            top: 50%;
             left: 50%;
             max-width: 500px;
             width: 100%;
@@ -161,22 +172,69 @@
             background: $bg-night;
             border: 1px solid $main-txt;
             color: $main-txt;
-            
+            padding: 20px;
 		}
-
+        & .icon-close {
+            display: block;
+        }
 		&__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
 		}
 
 		&__title {
+            font-family: 'Kaushan Script';
+            font-weight: 700;
+            font-size: 5rem;
+            text-transform: capitalize;
+            text-align: center;
 		}
-
+        &__banner{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            border: 10px solid $main-txt;
+            overflow: hidden;
+            background: url(../img/hands-taking-pizza.png) center no-repeat;
+        
+        }
 		&__promocode {
+            display: block;
+            min-height: 35px;
+            text-align: center;
+            font-weight: 600;
+            color: $third-txt;
+            font-size: 2rem;
+            
 		}
+        &__bannerText{
+            
+            height: 100%;
+            width: 100%;
+            font-family: 'Kaushan Script';
+            font-weight: 700;
+            font-size: 5rem;
+            background: $bg-main-transp;
+            @extend %flexcenter;
+        }
 
-		&__btn {
+        & #close_modal_btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
 		}
-}
-.icon-close {
+        &__btn{
+            background: $main-txt;
+            border-radius: 5px;
+            color: $white-color-txt;
+            padding: 10px 49px;
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 1.25;
+        }
 }
 
 .home {

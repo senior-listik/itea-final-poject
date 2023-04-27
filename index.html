@@ -13,7 +13,6 @@
     <script src="./js/script.js"></script>
 </head>
 <body>
-    
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
@@ -22,7 +21,7 @@
                     <ul class="header__menu ">
                         <li class="header__navItem"><a href="#home">Home</a></li>
                         <li class="header__navItem"><a href="#menu">Menu</a></li>
-                        <li class="header__navItem"><a href="#">Specials & Coupons</a></li>
+                        <li class="header__navItem" id="coupon"><a href="#">Specials & Coupons</a></li>
                         <li class="header__navItem"><a href="#reservation">Contact Us</a></li>
                     </ul>
                 </nav>
@@ -31,19 +30,24 @@
                     <div class="header__icon icon-burger"></div>
                 </div>
             </div>
-            <!-- <div class="modal ">
+        </header>
+        <main>
+            <!-- modal coupon -->
+            <div class="modal hide">
                 <div class="modal__body">
                     <div class="modal__container">
-                        <span class="icon-close"></span>
+                        <span class="icon-close" id="close_modal_btn"></span>
                         <h1 class="modal__title">Your sale</h1>
-                        <span class="modal__promocode"></span>
-                        <button class="modal__btn">Get promocode</button>
+                        <div class="modal__banner">
+                            <div class="modal__bannerText">-30%</div>
+                        </div>
+                        <span class="modal__promocode"> </span>
+                        <button class="modal__getPromoBtn modal__btn">Get promocode</button>
+                        <button class="modal__applyPromoBtn modal__btn hide">Apply</button>
                     </div>
                 </div>
-            </div> -->
-        </header>
-        
-        <main>
+            </div>
+
             <section class="home" id="home">
                 <div class="home__toggle icon-day" id="toggle2"></div>
                 <script src="./js/theme-toggle.js"></script>
@@ -291,7 +295,7 @@
                                 </div>
                             </div>
                             <div class="orderBlock">
-                                <div class="orderBlock__promocode">Apply your coupon code <span># xxxx xxxx</span></div>
+                                <div class="orderBlock__promocode">Apply your coupon code <span id="promocode"># xxxx xxxx</span></div>
                                 <div class="orderBlock__choice">
                                     <div class="orderBlock__name">
                                         <div class="name-pizza">Сhoose a pizza</div>

@@ -105,15 +105,15 @@
   .header__nav {
     display: none;
   }
-  .home__content {
-    padding-top: 15%;
-  }
-  .icon-burger {
+  .header .icon-close {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .icon-close {
+  .home__content {
+    padding-top: 15%;
+  }
+  .icon-burger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
