@@ -203,8 +203,10 @@ main {
   width: 100%;
   font-family: "Kaushan Script";
   font-weight: 700;
-  font-size: 5rem;
-  background: rgba(21, 21, 21, 0.85);
+  font-size: 6rem;
+  background: rgba(21, 21, 21, 0.439);
+  color: #FF8C42;
+  text-shadow: 1px 1px 1px #FFFFFF;
 }
 .modal #close_modal_btn {
   position: absolute;

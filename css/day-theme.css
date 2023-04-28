@@ -37,6 +37,30 @@
   transition: 0.1s;
 }
 
+.modal {
+  background: rgba(244, 244, 244, 0.85);
+}
+.modal__body {
+  background: #F4F4F4;
+  border: 1px solid #FF5B00;
+  color: #FF5B00;
+}
+.modal__banner {
+  border: 10px solid #FF5B00;
+  background: url(../img/hands-taking-pizza.png) center no-repeat;
+}
+.modal__promocode {
+  color: #1E1E1E;
+}
+.modal__bannerText {
+  background: rgba(238, 238, 238, 0.6);
+  color: #FF5B00;
+}
+.modal__btn {
+  background: #FF5B00;
+  color: #FFFFFF;
+}
+
 .home {
   background: #F4F4F4;
   color: #FF5B00;

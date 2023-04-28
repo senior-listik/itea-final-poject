@@ -3,6 +3,7 @@
 
 $bg-night: #F4F4F4;
 $bg-main-transp: rgba(244, 244, 244, 0.85);
+$bg-modal-transp: rgba(238, 238, 238, 0.6);
 $small-bg: #FFFFFF;
 $bg-contactForm: rgba(217, 217, 217, 0.59);
 $bg-orderForm:  rgba(217, 217, 217, 0.59);
@@ -64,7 +65,34 @@ $active-btn: #b2b0ae;
         }
      
 }
+.modal {
+    background: $bg-main-transp;
+    &__body {
+        background: $bg-night;
+        border: 1px solid $main-txt;
+        color: $main-txt;
+    }
 
+    &__banner {
+        border: 10px solid $main-txt;
+        background: url(../img/hands-taking-pizza.png) center no-repeat;
+
+    }
+
+    &__promocode {
+        color: $third-txt;
+    }
+
+    &__bannerText {
+        background: $bg-modal-transp;
+        color: $main-txt;
+    }
+
+    &__btn {
+        background: $main-txt;
+        color: $white-color-txt;
+    }
+}
 .home {
     background: $bg-night;
     color: $main-txt;
