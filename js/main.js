@@ -83,6 +83,45 @@ function showForm(){
     this.lastElementChild.classList.toggle('rotate');
 }
 
+// when click on the get promo code button, we generate a new promo code
+const getPromocodeBtn = document.querySelector('.modal__getPromoBtn');
+const applyPromocodeBtn = document.querySelector('.modal__applyPromoBtn');
+const promocodeInfo = document.querySelector('.modal__promocode');
+const appliedPromocode = document.getElementById('promocode');
+let promocode;
+
+getPromocodeBtn.addEventListener('click', generatePromoCode);
+
+// when clicking on apply, transfer the promo code to the order, 
+// change the apply button to get promo code and close the modal window
+
+applyPromocodeBtn.addEventListener('click', applyPromoCode);
+applyPromocodeBtn.addEventListener('click', toggleModalVisible);
+
+function generatePromoCode() {
+    if (appliedPromocode.outerText == '# xxxx xxxx') {
+        
+        applyPromocodeBtn.classList.remove('hide');
+        getPromocodeBtn.classList.add('hide');
+
+        promocode = ''
+        for (i = 0; i < 8; i++){
+            promocode += Math.round(Math.random() * 10);
+        }
+        promocodeInfo.innerText = promocode;
+    } else {
+        promocodeInfo.innerText = 'Your promo code already applied';
+    }
+
+}
+function applyPromoCode() {
+    appliedPromocode.innerText = ' #' + promocode;
+    promocodeInfo.innerText = '';
+    applyPromocodeBtn.classList.add('hide');
+    getPromocodeBtn.classList.remove('hide');
+    
+}
+
 // choice of pizza type and quantity + cost calculation
 const select = document.querySelector('#customize');
 const nameOfPizza = document.querySelector('.name-pizza');
@@ -101,8 +140,9 @@ let counter = 1;
 let optionText;
 let pizzaCost;
 let sum;
-let discount = 0.3;
-const tax = 0.3
+let discount = 1;
+let tax = 0.2;
+
 
 
 
@@ -147,16 +187,24 @@ subrtactNumber.addEventListener('click', function () {
 select.addEventListener('change', calcSum);
 subrtactNumber.addEventListener('click', calcSum);
 addNumber.addEventListener('click', calcSum);
+applyPromocodeBtn.addEventListener('click', calcSum);
 
 // order cost calculation and bill generation
 function calcSum() {
-    if (pizzaCost !== undefined) {
+    if (pizzaCost !== undefined && appliedPromocode.outerText == '# xxxx xxxx') {
+        sum = (pizzaCost * counter).toFixed(1);
+        billDiscount.innerText = '0';
+        billTax.innerText = '%' + tax * 100;
+        billTotalPrice.innerText = '$' + sum;
+        billToPay.innerText = '$' + (sum - (sum * tax)).toFixed(1);
+    } else if (pizzaCost !== undefined && appliedPromocode.outerText != '# xxxx xxxx') {
+        discount = 0.3;
         sum = (pizzaCost * counter).toFixed(1);
         sumCost.innerText = sum + '$';
         billDiscount.innerText = '- %' + discount * 100;
         billTax.innerText = '%' + tax * 100;
         discountPrice.innerText = (sum - (sum * discount)).toFixed(1) + '$';
-        billTotalPrice.innerText = '$' + (sum - (sum * discount)).toFixed(1) ;
+        billTotalPrice.innerText = '$' + (sum - (sum * discount)).toFixed(1);
         billToPay.innerText = '$' + ((sum - (sum * discount)) + (sum * tax)).toFixed(1);
     }
 };
@@ -166,7 +214,6 @@ const couponLink = document.getElementById('coupon');
 const couponModal = document.querySelector('.modal');
 const modalBody = document.querySelector('.modal__body');
 const modalCloseBtn = document.querySelector('#close_modal_btn');
-// const applyPromocodeBtn = document.querySelector('.modal__applyPromoBtn');
 
 couponLink.addEventListener('click', toggleModalVisible);
 
@@ -180,42 +227,5 @@ function toggleModalVisible(event) {
     couponModal.classList.toggle('hide');
 }
 
-// when click on the get promo code button, we generate a new promo code
-const getPromocodeBtn = document.querySelector('.modal__getPromoBtn');
-const applyPromocodeBtn = document.querySelector('.modal__applyPromoBtn');
-const promocodeInfo = document.querySelector('.modal__promocode');
-const appliedPromocode = document.getElementById('promocode');
-let promocode;
 
-getPromocodeBtn.addEventListener('click', generatePromoCode);
-
-// when clicking on apply, transfer the promo code to the order, 
-// change the apply button to get promo code and close the modal window
-
-applyPromocodeBtn.addEventListener('click', applyPromoCode);
-applyPromocodeBtn.addEventListener('click', toggleModalVisible);
-
-function generatePromoCode() {
-    if (appliedPromocode.outerText == '# xxxx xxxx') {
-        
-        applyPromocodeBtn.classList.remove('hide');
-        getPromocodeBtn.classList.add('hide');
-
-        promocode = ''
-        for (i = 0; i < 8; i++){
-            promocode += Math.round(Math.random() * 10);
-        }
-        promocodeInfo.innerText = promocode;
-    } else {
-        promocodeInfo.innerText = 'Your promo code already applied';
-    }
-
-}
-function applyPromoCode() {
-    appliedPromocode.innerText = ' #' + promocode;
-    promocodeInfo.innerText = '';
-    applyPromocodeBtn.classList.add('hide');
-    getPromocodeBtn.classList.remove('hide');
-    
-}
 
