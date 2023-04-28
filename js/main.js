@@ -101,8 +101,8 @@ let counter = 1;
 let optionText;
 let pizzaCost;
 let sum;
-let discount = 0.2;
-const tax = 0.2
+let discount = 0.3;
+const tax = 0.3
 
 
 
@@ -196,20 +196,26 @@ applyPromocodeBtn.addEventListener('click', applyPromoCode);
 applyPromocodeBtn.addEventListener('click', toggleModalVisible);
 
 function generatePromoCode() {
-    applyPromocodeBtn.classList.remove('hide');
-    getPromocodeBtn.classList.add('hide');
+    if (appliedPromocode.outerText == '# xxxx xxxx') {
+        
+        applyPromocodeBtn.classList.remove('hide');
+        getPromocodeBtn.classList.add('hide');
 
-    promocode = ''
-    for (i = 0; i < 8; i++){
-        promocode += Math.round(Math.random() * 10);
+        promocode = ''
+        for (i = 0; i < 8; i++){
+            promocode += Math.round(Math.random() * 10);
+        }
+        promocodeInfo.innerText = promocode;
+    } else {
+        promocodeInfo.innerText = 'Your promo code already applied';
     }
-    promocodeInfo.innerText = promocode;
 
 }
 function applyPromoCode() {
-    appliedPromocode.innerText = '#' + promocode;
+    appliedPromocode.innerText = ' #' + promocode;
     promocodeInfo.innerText = '';
     applyPromocodeBtn.classList.add('hide');
     getPromocodeBtn.classList.remove('hide');
     
 }
+
