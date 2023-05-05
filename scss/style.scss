@@ -941,7 +941,19 @@ __
         @extend %orderForm;
         z-index: 1;
         padding: 27px;
-
+        @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+        
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        
+            img {
+                animation: spin 5s linear 0s infinite;
+            }
     }
 
     &__formTitleBlock {
