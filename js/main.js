@@ -242,12 +242,15 @@ document.addEventListener('DOMContentLoaded', function () {
         let formData = new FormData(form);
         
         if (error === 0) {
+            
             document.querySelector('.reservation').classList.add('_sending');
             document.body.classList.add('overflowYHidden');
+            
             let response = await fetch('sendmail.php', {
                 method: 'POST',
                 body: formData
             }); 
+          
             if (response.ok) {
                 let result = await response.json();
                 alert(result.message);
@@ -267,7 +270,6 @@ document.addEventListener('DOMContentLoaded', function () {
     function formValidate(form) {
         let error = 0;
         let formReq = document.querySelectorAll('._req');
-        console.log(formReq)
 
         for (let i = 0; i < formReq.length; i++){
             const input = formReq[i];
