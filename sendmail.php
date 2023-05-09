@@ -11,7 +11,7 @@ $mail->CharSet = 'UTF-8';
 $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->IsHTML(true);
 
-$mail->setFrom('pizza_mania@kuku,com', 'Мой проект');
+$mail->setFrom('pizza_mania@kuku.com', 'Мой проект');
 $mail->addAddress('senior.listik@gmail.com');
 $mail->Subject = 'Приветик! Хочешь пиццы?)';
 
