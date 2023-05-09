@@ -184,7 +184,7 @@
                 <img src="./img/Gobi.png" alt="lettuce leaf" class="reservation__img">
                 <div class="reservation__container">
                     <div class="reservation__text">*terms & conditions applied.</div>
-                    <form action="sender.php" class="reservation__form" >
+                    <form action="#" class="reservation__form" id="form">
                         <h2 class="form__title">Reservation</h2>
                         <p class="form__text">
                             Book online or give us a call on
@@ -193,19 +193,19 @@
                         <p class="form__text">Between 9:30 am - 10:00 pm</p>
                         <div class="form__container">
                             <label for="name">
-                                <div>Name</div> <input type="text" name="name" required>
+                                <div>Name</div> <input type="text" name="name" class="_req" >
                             </label>
                             <label for="email">
-                                <div>E-mail</div> <input type="email" name="email" required>
+                                <div>E-mail</div> <input type="email" name="email" class="_req _email'" >
                             </label>
                             <label for="number">
-                                <div>People number</div> <input type="number" name="number" required>
+                                <div>People number</div> <input type="number" name="number" class="_req" >
                             </label>
                             <label for="text">
-                               <div>Date & time</div> <input type="text" name="text" required>
+                               <div>Date & time</div> <input type="text" name="text" class="_req" >
                             </label>
                         </div>
-                        <button class="form__btn" type="button">Send mail</button>
+                        <button class="form__btn" type="submit">Send mail</button>
                     </form>
                 </div>
             </section>
@@ -324,8 +324,8 @@
                                 <a href="#" class="orderBlock__link">" Any message to your Loving one ? "</a>
                             </div>
                             <div class="bill">
-                                <ul class="bill__list">
-                                    <li class="bill_title">Bill Details</li>
+                                <div class="bill_title">Bill Details</div>
+                                <ul class="bill__list hide">
                                     <li class="bill__total">Item total <span class="bill__totalPrice"></span></li>
                                     <li class="bill__delivery">Delivery partner<span class="bill__deliveryPrice">$5.00</span><span
                                             class="bill__deliveryFree">FREE</span></li>
